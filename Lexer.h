@@ -8,7 +8,7 @@ class Lexer
 {
 private:
     std::vector<Automaton*> automata;
-    std::vector<Token*> tokens;
+
 
     void CreateAutomata();
 
@@ -17,7 +17,7 @@ private:
 public:
     Lexer();
     ~Lexer();
-
+    std::vector<Token*> tokens;
     void Run(std::string& input);
     
     // TODO: add other public methods here
