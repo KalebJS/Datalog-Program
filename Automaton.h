@@ -40,6 +40,8 @@ public:
 
     int NewLinesRead() const { return newLines; }
 
+    void ToUndefinedType () { type = TokenType::UNDEFINED; }
+
 };
 
 #endif // AUTOMATON_H

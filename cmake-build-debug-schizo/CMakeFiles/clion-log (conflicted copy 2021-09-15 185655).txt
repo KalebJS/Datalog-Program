@@ -1,4 +1,0 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/users/guest/k/kalebjs/Documents/cs236/Project 1"
--- Configuring done
--- Generating done
--- Build files have been written to: /users/guest/k/kalebjs/Documents/cs236/Project 1

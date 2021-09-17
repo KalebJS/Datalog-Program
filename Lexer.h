@@ -19,9 +19,7 @@ public:
     ~Lexer();
     std::vector<Token*> tokens;
     void Run(std::string& input);
-    
-    // TODO: add other public methods here
-
+    void PrintTokens ();
 };
 
 #endif // LEXER_H

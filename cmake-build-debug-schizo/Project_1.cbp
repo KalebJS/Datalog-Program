@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/AddAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/AddAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Automaton.h">
 			<Option target="Project_1"/>
 		</Unit>
@@ -99,10 +105,46 @@
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/ColonDashAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/CommaAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/CommaAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/LeftParenAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/LeftParenAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Lexer.cpp">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Lexer.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/MultiplyAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/MultiplyAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/PeriodAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/PeriodAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/QuestionMarkAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/QuestionMarkAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/RightParenAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/RightParenAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Token.cpp">

@@ -23,9 +23,7 @@ int main(int argc, char** argv) {
 
     lexer->Run(input_str);
 
-    for (long unsigned int i = 0; i < lexer->tokens.size(); i++) {
-        std::cout << lexer->tokens.at(i)->ToString() << std::endl;
-    }
+    lexer->PrintTokens();
 
     delete lexer;
 

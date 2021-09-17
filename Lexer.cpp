@@ -4,6 +4,17 @@
 #include "CommaAutomaton.h"
 #include "PeriodAutomaton.h"
 #include "QuestionMarkAutomaton.h"
+#include "LeftParenAutomaton.h"
+#include "RightParenAutomaton.h"
+#include "MultiplyAutomaton.h"
+#include "AddAutomaton.h"
+#include "SchemesAutomaton.h"
+#include "FactsAutomaton.h"
+#include "RulesAutomaton.h"
+#include "QueriesAutomaton.h"
+#include "IdentifiersAutomaton.h"
+#include "StringAutomaton.h"
+#include "CommentAutomaton.h"
 #include <iostream>
 
 Lexer::Lexer() {
@@ -20,6 +31,20 @@ void Lexer::CreateAutomata() {
     automata.push_back(new CommaAutomaton());
     automata.push_back(new PeriodAutomaton());
     automata.push_back(new QuestionMarkAutomaton());
+    automata.push_back(new LeftParenAutomaton());
+    automata.push_back(new RightParenAutomaton());
+    automata.push_back(new MultiplyAutomaton());
+    automata.push_back(new AddAutomaton());
+    automata.push_back(new SchemesAutomaton());
+    automata.push_back(new FactsAutomaton());
+    automata.push_back(new RulesAutomaton());
+    automata.push_back(new QueriesAutomaton());
+    automata.push_back(new StringAutomaton());
+    automata.push_back(new CommentAutomaton());
+
+    // this must be the final automaton for priority in parallel and max
+    // keyword > automata
+    automata.push_back(new IdentifiersAutomaton());
 }
 
 void Lexer::Run(std::string& input) {
@@ -29,8 +54,12 @@ void Lexer::Run(std::string& input) {
         Automaton* maxAutomaton = automata.at(0);
         int maxRead = 0;
 
-        while (input.at(0) == ' ') {
+        while (input.at(0) == ' ' || input.at(0) == '\n') {
+            if (input.at(0) == '\n') {
+                lineNumber++;
+            }
             input = input.substr(1);
+            if (input.size() == 0) { break; }
         }
 
         // Here is the "Parallel" part of the algorithm
@@ -59,5 +88,13 @@ void Lexer::Run(std::string& input) {
 
         input = input.substr(maxRead);
     }
+    lineNumber++;
+    tokens.push_back(new Token(TokenType::EOF_TYPE, "", lineNumber));
+}
 
+void Lexer::PrintTokens () {
+    for (long unsigned int i = 0; i < tokens.size(); i++) {
+        std::cout << tokens.at(i)->ToString() << std::endl;
+    }
+    std::cout << "Total Tokens = " << tokens.size() << std::endl;
 }
