@@ -32,6 +32,7 @@ private:
 
 public:
     Token(TokenType type, std::string description, int line);
+    virtual ~Token() = default;
 
     std::string ToString ();
 

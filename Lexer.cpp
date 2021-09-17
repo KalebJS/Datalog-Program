@@ -1,4 +1,5 @@
 #include "Lexer.h"
+#include "Token.h"
 #include "ColonAutomaton.h"
 #include "ColonDashAutomaton.h"
 #include "CommaAutomaton.h"
@@ -22,7 +23,12 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    // TODO: need to clean up the memory in `automata` and `tokens`
+    for (long unsigned int i = 0; i < tokens.size(); i++) {
+        delete tokens.at(0);
+    }
+    for (long unsigned int i = 0; i < automata.size(); i++) {
+        delete automata.at(0);
+    }
 }
 
 void Lexer::CreateAutomata() {
@@ -41,7 +47,6 @@ void Lexer::CreateAutomata() {
     automata.push_back(new QueriesAutomaton());
     automata.push_back(new StringAutomaton());
     automata.push_back(new CommentAutomaton());
-
     // this must be the final automaton for priority in parallel and max
     // keyword > automata
     automata.push_back(new IdentifiersAutomaton());
@@ -54,12 +59,12 @@ void Lexer::Run(std::string& input) {
         Automaton* maxAutomaton = automata.at(0);
         int maxRead = 0;
 
-        while (input.at(0) == ' ' || input.at(0) == '\n') {
+        if (isspace(input.at(0)) || input.at(0) == '\t' || input.at(0) == '\n') {
             if (input.at(0) == '\n') {
                 lineNumber++;
             }
             input = input.substr(1);
-            if (input.size() == 0) { break; }
+            continue;
         }
 
         // Here is the "Parallel" part of the algorithm
@@ -88,7 +93,6 @@ void Lexer::Run(std::string& input) {
 
         input = input.substr(maxRead);
     }
-    lineNumber++;
     tokens.push_back(new Token(TokenType::EOF_TYPE, "", lineNumber));
 }
 
@@ -96,5 +100,5 @@ void Lexer::PrintTokens () {
     for (long unsigned int i = 0; i < tokens.size(); i++) {
         std::cout << tokens.at(i)->ToString() << std::endl;
     }
-    std::cout << "Total Tokens = " << tokens.size() << std::endl;
+    std::cout << "Total Tokens = " << tokens.size();
 }

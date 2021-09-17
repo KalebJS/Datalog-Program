@@ -4,3 +4,5 @@ Queries:
 
 Rules:
    marriedTo( X,Y ) :- marriedTo(Y,X) .
+
+''

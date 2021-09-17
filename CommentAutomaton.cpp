@@ -48,6 +48,12 @@ void CommentAutomaton::S3(const std::string& input) {
         index++;
         S4(input);
     }
+    else if (input[index] == '\n') {
+        inputRead++;
+        index++;
+        newLines++;
+        S3(input);
+    }
     else {
         inputRead++;
         index++;
@@ -60,6 +66,12 @@ void CommentAutomaton::S4(const std::string& input) {
     }
     else if (input[index] == '#') {
         inputRead++;
+    }
+    else if (input[index] == '\n') {
+        inputRead++;
+        index++;
+        newLines++;
+        S3(input);
     }
     else {
         inputRead++;

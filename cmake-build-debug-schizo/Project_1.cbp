@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1">
-				<Option output="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo"/>
+				<Option output="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/k/kalebjs/Documents/cs236/Project 1/."/>
+					<Add directory="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1/fast">
-				<Option output="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Project 1/cmake-build-debug-schizo"/>
+				<Option output="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/k/kalebjs/Documents/cs236/Project 1/."/>
+					<Add directory="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,86 +77,128 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Project\ 1/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/AddAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/AddAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Automaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Automaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/ColonAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/ColonAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/ColonDashAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/ColonDashAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/CommaAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/CommaAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/LeftParenAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/LeftParenAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Lexer.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Lexer.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/MultiplyAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/MultiplyAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/PeriodAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/PeriodAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/QuestionMarkAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/QuestionMarkAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/RightParenAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/RightParenAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Token.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/Token.h">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/main.cpp">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Project 1/CMakeLists.txt">
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/main.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
