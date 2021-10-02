@@ -35,8 +35,8 @@ public:
     virtual ~Token() = default;
 
     std::string ToString ();
-
     std::string TokenTypeToString (TokenType tokenType);
+    TokenType GetTokenType ();
 };
 
 #endif // TOKEN_H

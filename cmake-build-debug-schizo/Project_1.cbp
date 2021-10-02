@@ -8,43 +8,43 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
+				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1">
-				<Option output="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
+				<Option output="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/."/>
+					<Add directory="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -54,20 +54,20 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Project_1/fast">
-				<Option output="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo"/>
+				<Option output="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/Project_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/."/>
+					<Add directory="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/."/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -77,128 +77,158 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
-					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 Project_1/fast"/>
+					<CompileFile command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j20 -f &quot;/users/guest/k/kalebjs/Documents/cs236/Datalog\ Program/cmake-build-debug-schizo/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Automaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.h">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/main.cpp">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.cpp">
 			<Option target="Project_1"/>
 		</Unit>
-		<Unit filename="/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CMakeLists.txt">
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/main.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

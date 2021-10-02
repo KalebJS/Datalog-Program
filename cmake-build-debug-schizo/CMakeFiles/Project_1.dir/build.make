@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4
+CMAKE_SOURCE_DIR = "/users/guest/k/kalebjs/Documents/cs236/Datalog Program"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo
+CMAKE_BINARY_DIR = "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Project_1.dir/depend.make
@@ -59,250 +59,315 @@ include CMakeFiles/Project_1.dir/flags.make
 
 CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o: ../ColonAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/ColonAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/ColonAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/ColonAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.cpp > CMakeFiles/Project_1.dir/ColonAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.cpp" > CMakeFiles/Project_1.dir/ColonAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/ColonAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/ColonAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonAutomaton.cpp -o CMakeFiles/Project_1.dir/ColonAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.cpp" -o CMakeFiles/Project_1.dir/ColonAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o: ../ColonDashAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.cpp > CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.cpp" > CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/ColonDashAutomaton.cpp -o CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.cpp" -o CMakeFiles/Project_1.dir/ColonDashAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o: ../CommaAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/CommaAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/CommaAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/CommaAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.cpp > CMakeFiles/Project_1.dir/CommaAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.cpp" > CMakeFiles/Project_1.dir/CommaAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/CommaAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/CommaAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommaAutomaton.cpp -o CMakeFiles/Project_1.dir/CommaAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.cpp" -o CMakeFiles/Project_1.dir/CommaAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.cpp > CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.cpp" > CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/PeriodAutomaton.cpp -o CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.cpp" -o CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o: ../QuestionMarkAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.cpp > CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.cpp" > CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QuestionMarkAutomaton.cpp -o CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.cpp" -o CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.cpp > CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.cpp" > CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/LeftParenAutomaton.cpp -o CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.cpp" -o CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.cpp > CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.cpp" > CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RightParenAutomaton.cpp -o CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.cpp" -o CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o: ../MultiplyAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.cpp > CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.cpp" > CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/MultiplyAutomaton.cpp -o CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.cpp" -o CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/AddAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/AddAutomaton.cpp.o: ../AddAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project_1.dir/AddAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/AddAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Project_1.dir/AddAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/AddAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/AddAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/AddAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.cpp > CMakeFiles/Project_1.dir/AddAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.cpp" > CMakeFiles/Project_1.dir/AddAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/AddAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/AddAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/AddAutomaton.cpp -o CMakeFiles/Project_1.dir/AddAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.cpp" -o CMakeFiles/Project_1.dir/AddAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o: ../SchemesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.cpp > CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.cpp" > CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/SchemesAutomaton.cpp -o CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.cpp" -o CMakeFiles/Project_1.dir/SchemesAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/FactsAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.cpp > CMakeFiles/Project_1.dir/FactsAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp" > CMakeFiles/Project_1.dir/FactsAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/FactsAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/FactsAutomaton.cpp -o CMakeFiles/Project_1.dir/FactsAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp" -o CMakeFiles/Project_1.dir/FactsAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o: ../RulesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/RulesAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/RulesAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.cpp > CMakeFiles/Project_1.dir/RulesAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.cpp" > CMakeFiles/Project_1.dir/RulesAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/RulesAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/RulesAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/RulesAutomaton.cpp -o CMakeFiles/Project_1.dir/RulesAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.cpp" -o CMakeFiles/Project_1.dir/RulesAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o: ../QueriesAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.cpp > CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.cpp" > CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/QueriesAutomaton.cpp -o CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.cpp" -o CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: ../IdentifiersAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.cpp > CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.cpp" > CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/IdentifiersAutomaton.cpp -o CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.cpp" -o CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/StringAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/StringAutomaton.cpp.o: ../StringAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project_1.dir/StringAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/StringAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Project_1.dir/StringAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/StringAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/StringAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/StringAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.cpp > CMakeFiles/Project_1.dir/StringAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.cpp" > CMakeFiles/Project_1.dir/StringAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/StringAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/StringAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/StringAutomaton.cpp -o CMakeFiles/Project_1.dir/StringAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.cpp" -o CMakeFiles/Project_1.dir/StringAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.cpp"
 
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/CommentAutomaton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.cpp > CMakeFiles/Project_1.dir/CommentAutomaton.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.cpp" > CMakeFiles/Project_1.dir/CommentAutomaton.cpp.i
 
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/CommentAutomaton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/CommentAutomaton.cpp -o CMakeFiles/Project_1.dir/CommentAutomaton.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.cpp" -o CMakeFiles/Project_1.dir/CommentAutomaton.cpp.s
 
 CMakeFiles/Project_1.dir/Lexer.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/Lexer.cpp.o: ../Lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Project_1.dir/Lexer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Lexer.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Project_1.dir/Lexer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Lexer.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.cpp"
 
 CMakeFiles/Project_1.dir/Lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Lexer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.cpp > CMakeFiles/Project_1.dir/Lexer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.cpp" > CMakeFiles/Project_1.dir/Lexer.cpp.i
 
 CMakeFiles/Project_1.dir/Lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Lexer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Lexer.cpp -o CMakeFiles/Project_1.dir/Lexer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.cpp" -o CMakeFiles/Project_1.dir/Lexer.cpp.s
 
 CMakeFiles/Project_1.dir/main.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Project_1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/main.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/Project_1.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/main.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/main.cpp"
 
 CMakeFiles/Project_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/main.cpp > CMakeFiles/Project_1.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/main.cpp" > CMakeFiles/Project_1.dir/main.cpp.i
 
 CMakeFiles/Project_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/main.cpp -o CMakeFiles/Project_1.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/main.cpp" -o CMakeFiles/Project_1.dir/main.cpp.s
 
 CMakeFiles/Project_1.dir/Token.cpp.o: CMakeFiles/Project_1.dir/flags.make
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project_1.dir/Token.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Token.cpp.o -c /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/Project_1.dir/Token.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Token.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.cpp"
 
 CMakeFiles/Project_1.dir/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Token.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.cpp > CMakeFiles/Project_1.dir/Token.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.cpp" > CMakeFiles/Project_1.dir/Token.cpp.i
 
 CMakeFiles/Project_1.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Token.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/Token.cpp -o CMakeFiles/Project_1.dir/Token.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.cpp" -o CMakeFiles/Project_1.dir/Token.cpp.s
+
+CMakeFiles/Project_1.dir/Parser.cpp.o: CMakeFiles/Project_1.dir/flags.make
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/Project_1.dir/Parser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Parser.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.cpp"
+
+CMakeFiles/Project_1.dir/Parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.cpp" > CMakeFiles/Project_1.dir/Parser.cpp.i
+
+CMakeFiles/Project_1.dir/Parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.cpp" -o CMakeFiles/Project_1.dir/Parser.cpp.s
+
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: CMakeFiles/Project_1.dir/flags.make
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/Project_1.dir/DatalogProgram.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/DatalogProgram.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp"
+
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/DatalogProgram.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp" > CMakeFiles/Project_1.dir/DatalogProgram.cpp.i
+
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/DatalogProgram.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp" -o CMakeFiles/Project_1.dir/DatalogProgram.cpp.s
+
+CMakeFiles/Project_1.dir/Predicate.cpp.o: CMakeFiles/Project_1.dir/flags.make
+CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Predicate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/Project_1.dir/Predicate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Predicate.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.cpp"
+
+CMakeFiles/Project_1.dir/Predicate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Predicate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.cpp" > CMakeFiles/Project_1.dir/Predicate.cpp.i
+
+CMakeFiles/Project_1.dir/Predicate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Predicate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.cpp" -o CMakeFiles/Project_1.dir/Predicate.cpp.s
+
+CMakeFiles/Project_1.dir/Rule.cpp.o: CMakeFiles/Project_1.dir/flags.make
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/Project_1.dir/Rule.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Rule.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.cpp"
+
+CMakeFiles/Project_1.dir/Rule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Rule.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.cpp" > CMakeFiles/Project_1.dir/Rule.cpp.i
+
+CMakeFiles/Project_1.dir/Rule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Rule.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.cpp" -o CMakeFiles/Project_1.dir/Rule.cpp.s
+
+CMakeFiles/Project_1.dir/Parameter.cpp.o: CMakeFiles/Project_1.dir/flags.make
+CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Parameter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/Project_1.dir/Parameter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Project_1.dir/Parameter.cpp.o -c "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.cpp"
+
+CMakeFiles/Project_1.dir/Parameter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Project_1.dir/Parameter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.cpp" > CMakeFiles/Project_1.dir/Parameter.cpp.i
+
+CMakeFiles/Project_1.dir/Parameter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Project_1.dir/Parameter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.cpp" -o CMakeFiles/Project_1.dir/Parameter.cpp.s
 
 # Object files for target Project_1
 Project_1_OBJECTS = \
@@ -324,7 +389,12 @@ Project_1_OBJECTS = \
 "CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o" \
 "CMakeFiles/Project_1.dir/Lexer.cpp.o" \
 "CMakeFiles/Project_1.dir/main.cpp.o" \
-"CMakeFiles/Project_1.dir/Token.cpp.o"
+"CMakeFiles/Project_1.dir/Token.cpp.o" \
+"CMakeFiles/Project_1.dir/Parser.cpp.o" \
+"CMakeFiles/Project_1.dir/DatalogProgram.cpp.o" \
+"CMakeFiles/Project_1.dir/Predicate.cpp.o" \
+"CMakeFiles/Project_1.dir/Rule.cpp.o" \
+"CMakeFiles/Project_1.dir/Parameter.cpp.o"
 
 # External object files for target Project_1
 Project_1_EXTERNAL_OBJECTS =
@@ -348,9 +418,14 @@ Project_1: CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o
 Project_1: CMakeFiles/Project_1.dir/Lexer.cpp.o
 Project_1: CMakeFiles/Project_1.dir/main.cpp.o
 Project_1: CMakeFiles/Project_1.dir/Token.cpp.o
+Project_1: CMakeFiles/Project_1.dir/Parser.cpp.o
+Project_1: CMakeFiles/Project_1.dir/DatalogProgram.cpp.o
+Project_1: CMakeFiles/Project_1.dir/Predicate.cpp.o
+Project_1: CMakeFiles/Project_1.dir/Rule.cpp.o
+Project_1: CMakeFiles/Project_1.dir/Parameter.cpp.o
 Project_1: CMakeFiles/Project_1.dir/build.make
 Project_1: CMakeFiles/Project_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable Project_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable Project_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Project_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -363,6 +438,6 @@ CMakeFiles/Project_1.dir/clean:
 .PHONY : CMakeFiles/Project_1.dir/clean
 
 CMakeFiles/Project_1.dir/depend:
-	cd /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4 /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4 /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo /users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles/Project_1.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Project_1.dir/depend
 

@@ -6,5 +6,5 @@ CXX_FLAGS =  -Wall -Werror -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/users/guest/k/kalebjs/tmp/tmp.Z9DNcvzId4/. 
+CXX_INCLUDES = -I"/users/guest/k/kalebjs/Documents/cs236/Datalog Program/." 
 

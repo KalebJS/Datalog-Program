@@ -35,3 +35,6 @@ std::string Token::ToString () {
             (line) + ")";
     return tokenReturnString;
 }
+TokenType Token::GetTokenType() {
+    return this->type;
+}

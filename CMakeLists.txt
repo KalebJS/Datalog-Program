@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16.3)
-project(Project_1)
+project(datalog)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror")
@@ -43,4 +43,15 @@ add_executable(Project_1
         Lexer.h
         main.cpp
         Token.cpp
-        Token.h)
+        Token.h
+        Parser.cpp
+        Parser.h
+        DatalogProgram.cpp
+        DatalogProgram.h
+        Predicate.cpp
+        Predicate.h
+        Rule.cpp
+        Rule.h
+        Parameter.cpp
+        Parameter.h
+        )
