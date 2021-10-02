@@ -2,12 +2,12 @@
 #include "Parser.h"
 
 
-std::queue<Token*> Parser::FilterComments(std::vector<Token*> unfilteredTokens) {
-    std::queue<Token*> filteredTokens;
+std::queue<Token> Parser::FilterComments(std::vector<Token> unfilteredTokens) {
+    std::queue<Token> filteredTokens;
     for (long unsigned int i = 0; i < unfilteredTokens.size(); i++) {
-        Token *token = unfilteredTokens.at(i);
+        Token token = unfilteredTokens.at(i);
         // ignore comments
-        if (token->GetTokenType() == TokenType::COMMENT) {
+        if (token.GetTokenType() == TokenType::COMMENT) {
             continue;
         } else {
             filteredTokens.push(token);
@@ -15,7 +15,7 @@ std::queue<Token*> Parser::FilterComments(std::vector<Token*> unfilteredTokens) 
     }
     return filteredTokens;
 }
-void Parser::Parse(std::vector<Token*> tokenVector) {
+void Parser::Parse(std::vector<Token> tokenVector) {
     tokens = FilterComments(tokenVector);
     // datalogProgram	->	SCHEMES COLON scheme schemeList FACTS COLON factList RULES COLON ruleList QUERIES COLON query queryList EOF
     try {
@@ -35,20 +35,20 @@ void Parser::Parse(std::vector<Token*> tokenVector) {
         QueryList();
         VerifyToken(TokenType::EOF_TYPE);
         std::cout << "Success!" << std::endl;
-    } catch (Token* token) {
+    } catch (Token token) {
         std::cout << "Failure!" << std::endl;
-        std::cout << token->ToString() << std::endl;
+        std::cout << token.ToString() << std::endl;
     }
 }
 void Parser::VerifyToken (TokenType type) {
-    if (tokens.front()->GetTokenType() != type) {
+    if (tokens.front().GetTokenType() != type) {
         throw tokens.front();
     } else {
         tokens.pop();
     }
 }
-bool Parser::CompareNextTokenTypes (Token* token, TokenType type) {
-    if (token->GetTokenType() != type) {
+bool Parser::CompareNextTokenTypes (Token token, TokenType type) {
+    if (token.GetTokenType() != type) {
         return false;
     } else {
         return true;
@@ -168,7 +168,7 @@ void Parser::Parameter () {
     } else if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         VerifyToken(TokenType::ID);
     } else {
-        Token* token = tokens.front();
+        Token token = tokens.front();
         throw token;
     }
 }

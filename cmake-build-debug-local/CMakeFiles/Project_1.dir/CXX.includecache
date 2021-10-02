@@ -6,33 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/AddAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
 Token.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/ColonAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/ColonDashAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/CommaAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/CommentAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/DatalogProgram.cpp
-DatalogProgram.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/DatalogProgram.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/DatalogProgram.h
 Predicate.h
@@ -44,58 +20,6 @@ string
 vector
 -
 
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/FactsAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/IdentifiersAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/LeftParenAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Lexer.cpp
-Lexer.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Lexer.h
-Token.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
-ColonAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/ColonAutomaton.h
-ColonDashAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/ColonDashAutomaton.h
-CommaAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/CommaAutomaton.h
-PeriodAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/PeriodAutomaton.h
-QuestionMarkAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/QuestionMarkAutomaton.h
-LeftParenAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/LeftParenAutomaton.h
-RightParenAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/RightParenAutomaton.h
-MultiplyAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/MultiplyAutomaton.h
-AddAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/AddAutomaton.h
-SchemesAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/SchemesAutomaton.h
-FactsAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/FactsAutomaton.h
-RulesAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/RulesAutomaton.h
-QueriesAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/QueriesAutomaton.h
-IdentifiersAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/IdentifiersAutomaton.h
-StringAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/StringAutomaton.h
-CommentAutomaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/CommentAutomaton.h
-iostream
--
-
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Lexer.h
 vector
 -
@@ -103,10 +27,6 @@ Automaton.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
 Token.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/MultiplyAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Parser.cpp
 iostream
@@ -128,41 +48,13 @@ vector
 queue
 -
 
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/PeriodAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Predicate.h
 string
 -
 
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/QueriesAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/QuestionMarkAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/RightParenAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Rule.h
 string
 -
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/RulesAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/SchemesAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/StringAutomaton.h
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
 string
