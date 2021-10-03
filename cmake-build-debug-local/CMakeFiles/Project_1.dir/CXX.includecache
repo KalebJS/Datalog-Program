@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-Token.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
-
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/DatalogProgram.h
 Predicate.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Predicate.h
@@ -19,14 +15,6 @@ string
 -
 vector
 -
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Lexer.h
-vector
--
-Automaton.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Automaton.h
-Token.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Parser.cpp
 iostream
@@ -51,24 +39,22 @@ queue
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Predicate.h
 string
 -
+vector
+-
+Token.h
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Rule.h
 string
 -
+vector
+-
+Token.h
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
+Predicate.h
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Predicate.h
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
 string
 -
-
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/main.cpp
-iostream
--
-fstream
--
-sstream
--
-Lexer.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Lexer.h
-Parser.h
-/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Parser.h
 

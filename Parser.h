@@ -15,6 +15,8 @@ public:
     std::queue<Token> FilterComments (std::vector<Token> unfilteredTokens);
     void Parse(std::vector<Token> tokenVector);
     void VerifyToken (TokenType type);
+    void VerifyToken (TokenType type, Predicate& predicate);
+    void VerifyToken (TokenType type, Rule& rule);
     bool CompareNextTokenTypes (Token token, TokenType type);
     void SchemeList ();
     void FactList ();
@@ -22,15 +24,23 @@ public:
     void QueryList ();
     void Scheme ();
     void Fact ();
-    void Rule ();
+    void RuleMethod ();
     void Query ();
     void HeadPredicate ();
-    void Predicate ();
+    void HeadPredicate (Rule& rule);
+    void PredicateMethod ();
+    void PredicateMethod (Predicate& predicate);
+    void PredicateMethod (Rule& rule);
     void PredicateList ();
+    void PredicateList (Rule& rule);
     void ParameterList ();
+    void ParameterList (Predicate& predicate);
     void StringList ();
+    void StringList (Predicate& predicate);
     void IDList ();
+    void IDList (Predicate& predicate);
     void Parameter ();
+    void Parameter (Predicate& predicate);
     DatalogProgram GetDatalog () { return datalog; }
 };
 

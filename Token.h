@@ -34,6 +34,7 @@ public:
     Token(TokenType type, std::string description, int line);
     virtual ~Token() = default;
 
+    std::string GetDescription() { return description; }
     std::string ToString ();
     std::string TokenTypeToString (TokenType tokenType);
     TokenType GetTokenType ();

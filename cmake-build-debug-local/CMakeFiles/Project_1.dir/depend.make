@@ -30,7 +30,8 @@ CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: \
  ../DatalogProgram.cpp \
  ../DatalogProgram.h \
  ../Predicate.h \
- ../Rule.h
+ ../Rule.h \
+ ../Token.h
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: \
  ../Automaton.h \
  ../FactsAutomaton.cpp \
@@ -89,7 +90,8 @@ CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: \
  ../Token.h
 CMakeFiles/Project_1.dir/Predicate.cpp.o: \
  ../Predicate.cpp \
- ../Predicate.h
+ ../Predicate.h \
+ ../Token.h
 CMakeFiles/Project_1.dir/QueriesAutomaton.cpp.o: \
  ../Automaton.h \
  ../QueriesAutomaton.cpp \
@@ -106,7 +108,10 @@ CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: \
  ../RightParenAutomaton.h \
  ../Token.h
 CMakeFiles/Project_1.dir/Rule.cpp.o: \
- ../Rule.cpp
+ ../Predicate.h \
+ ../Rule.cpp \
+ ../Rule.h \
+ ../Token.h
 CMakeFiles/Project_1.dir/RulesAutomaton.cpp.o: \
  ../Automaton.h \
  ../RulesAutomaton.cpp \
