@@ -13,6 +13,7 @@ public:
     ~Predicate();
     std::string toString ();
     void AddElement (Token token);
+    std::vector<Token> GetElements () { return elements; }
 };
 
 #endif

@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
     }
 
     Lexer* lexer = new Lexer();
-    Parser* parser = new Parser();
+    Parser parser = Parser();
 
     lexer->Run(input_str);
 
@@ -34,9 +34,10 @@ int main(int argc, char** argv) {
 
     std::cout << std::endl << std::endl;
 
-    parser->Parse(lexer->GetTokens());
+    parser.Parse(lexer->GetTokens());
 
-    delete parser;
+    std::cout << parser.GetDatalog().toString() << std::endl;
+
     delete lexer;
 
     return 0;

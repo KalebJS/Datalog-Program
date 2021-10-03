@@ -11,9 +11,15 @@ Predicate.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Predicate.h
 Rule.h
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Rule.h
+Token.h
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/Token.h
 string
 -
 vector
+-
+iostream
+-
+algorithm
 -
 
 /Users/kalebsmith/ownCloud/School/CS 236/Datalog/Parser.cpp

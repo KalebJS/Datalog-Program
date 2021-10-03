@@ -27,6 +27,9 @@ CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.h
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Rule.h
 
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp

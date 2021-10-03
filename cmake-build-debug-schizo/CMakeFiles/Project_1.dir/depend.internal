@@ -28,6 +28,9 @@ CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o
  /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o
  /users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp
+ /users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.h
+ /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.h
+ /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.h
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o
  /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
  /users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp

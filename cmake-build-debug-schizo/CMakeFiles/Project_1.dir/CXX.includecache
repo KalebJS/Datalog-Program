@@ -6,53 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.cpp
-AddAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
 Token.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.cpp
-ColonAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.cpp
-ColonDashAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.cpp
-CommaAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.cpp
-CommentAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.h
-iostream
--
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.cpp
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/DatalogProgram.h
 Predicate.h
@@ -64,70 +20,6 @@ string
 vector
 -
 
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.cpp
-FactsAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.cpp
-IdentifiersAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.cpp
-LeftParenAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.cpp
-Lexer.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.h
-Token.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
-ColonAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonAutomaton.h
-ColonDashAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/ColonDashAutomaton.h
-CommaAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommaAutomaton.h
-PeriodAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.h
-QuestionMarkAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.h
-LeftParenAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/LeftParenAutomaton.h
-RightParenAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.h
-MultiplyAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.h
-AddAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/AddAutomaton.h
-SchemesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.h
-FactsAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/FactsAutomaton.h
-RulesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.h
-QueriesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.h
-IdentifiersAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/IdentifiersAutomaton.h
-StringAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.h
-CommentAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/CommentAutomaton.h
-iostream
--
-
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Lexer.h
 vector
 -
@@ -135,28 +27,6 @@ Automaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
 Token.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.cpp
-MultiplyAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/MultiplyAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.cpp
-Parameter.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parameter.h
-string
--
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.cpp
-iostream
--
-Parser.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Parser.h
 Token.h
@@ -172,83 +42,13 @@ vector
 queue
 -
 
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.cpp
-PeriodAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/PeriodAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.cpp
-iostream
--
-Predicate.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.h
-
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Predicate.h
 string
 -
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.cpp
-QueriesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QueriesAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.cpp
-QuestionMarkAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/QuestionMarkAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.cpp
-RightParenAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RightParenAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.cpp
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Rule.h
 string
 -
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.cpp
-RulesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/RulesAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.cpp
-SchemesAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/SchemesAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.cpp
-StringAutomaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.h
-iostream
--
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/StringAutomaton.h
-Automaton.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Automaton.h
-
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.cpp
-Token.h
-/users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog Program/Token.h
 string
