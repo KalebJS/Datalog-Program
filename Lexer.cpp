@@ -23,9 +23,14 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    for (long unsigned int i = 0; i < automata.size(); i++) {
-        delete automata.at(0);
+    for (Automaton* automaton : automata) {
+        delete automaton;
     }
+    automata.clear();;
+    for (Token* token : tokens) {
+        delete token;
+    }
+    tokens.clear();
 }
 
 void Lexer::CreateAutomata() {
@@ -76,7 +81,7 @@ void Lexer::Run(std::string& input) {
 
         // Here is the "Max" part of the algorithm
         if (maxRead > 0) {
-            Token newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+            Token* newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newToken);
         }
@@ -84,18 +89,18 @@ void Lexer::Run(std::string& input) {
         // Create single character undefined token
         else {
             maxRead = 1;
-            Token newToken = Token(TokenType::UNDEFINED, input.substr(0,maxRead), lineNumber);
+            Token* newToken = new Token(TokenType::UNDEFINED, input.substr(0,maxRead), lineNumber);
             tokens.push_back(newToken);
         }
 
         input = input.substr(maxRead);
     }
-    tokens.push_back(Token(TokenType::EOF_TYPE, "", lineNumber));
+    tokens.push_back(new Token(TokenType::EOF_TYPE, "", lineNumber));
 }
 
 void Lexer::PrintTokens () {
     for (long unsigned int i = 0; i < tokens.size(); i++) {
-        std::cout << tokens.at(i).ToString() << std::endl;
+        std::cout << tokens.at(i)->ToString() << std::endl;
     }
     std::cout << "Total Tokens = " << tokens.size();
 }

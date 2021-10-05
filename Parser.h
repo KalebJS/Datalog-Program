@@ -10,14 +10,15 @@
 class Parser {
 private:
     DatalogProgram datalog;
-    std::queue<Token> tokens;
+    std::queue<Token*> tokens;
+    std::string result;
 public:
-    std::queue<Token> FilterComments (std::vector<Token> unfilteredTokens);
-    void Parse(std::vector<Token> tokenVector);
+    std::queue<Token*> FilterComments (std::vector<Token*> unfilteredTokens);
+    bool Parse(std::vector<Token*> tokenVector);
     void VerifyToken (TokenType type);
     void VerifyToken (TokenType type, Predicate& predicate);
     void VerifyToken (TokenType type, Rule& rule);
-    bool CompareNextTokenTypes (Token token, TokenType type);
+    bool CompareNextTokenTypes (Token* token, TokenType type);
     void SchemeList ();
     void FactList ();
     void RuleList ();
@@ -42,6 +43,7 @@ public:
     void Parameter ();
     void Parameter (Predicate& predicate);
     DatalogProgram GetDatalog () { return datalog; }
+    std::string GetResult () { return result; }
 };
 
 #endif

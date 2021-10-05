@@ -8,7 +8,7 @@ class Lexer
 {
 private:
     std::vector<Automaton*> automata;
-    std::vector<Token> tokens;
+    std::vector<Token*> tokens;
 
 
     void CreateAutomata();
@@ -20,7 +20,7 @@ public:
     ~Lexer();
     void Run(std::string& input);
     void PrintTokens ();
-    std::vector<Token> GetTokens () { return tokens; }
+    std::vector<Token*> GetTokens () { return tokens; }
 };
 
 #endif // LEXER_H

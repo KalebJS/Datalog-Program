@@ -13,8 +13,6 @@ int main(int argc, char** argv) {
     std::string filename = argv[1];
     std::ifstream input(filename); //taking file as inputstream
 
-    std::cout << filename << std::endl;
-
     std::string input_str;
     if(input) {
         std::stringstream ss;
@@ -26,19 +24,18 @@ int main(int argc, char** argv) {
     }
 
     Lexer* lexer = new Lexer();
-    Parser parser = Parser();
+    Parser* parser = new Parser();
 
     lexer->Run(input_str);
 
-    lexer->PrintTokens();
-
-    std::cout << std::endl << std::endl;
-
-    parser.Parse(lexer->GetTokens());
-
-    std::cout << parser.GetDatalog().toString() << std::endl;
+    bool wasParsed = parser->Parse(lexer->GetTokens());
+    std::cout << parser->GetResult() << std::endl;
+    if (wasParsed) {
+        std::cout << parser->GetDatalog().toString();
+    }
 
     delete lexer;
+    delete parser;
 
     return 0;
 }

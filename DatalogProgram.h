@@ -21,8 +21,8 @@ private:
     std::vector<std::string> domain;
 
 public:
-    //DatalogProgram();
-    //~DatalogProgram();
+    DatalogProgram() {}
+    ~DatalogProgram() {}
     void AddScheme (Predicate scheme) { schemes.push_back(scheme); }
     void AddFact (Predicate fact);
     void AddQuery (Predicate query) { queries.push_back(query); }
