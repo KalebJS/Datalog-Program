@@ -1,4 +1,4 @@
-# Install script for directory: /users/guest/k/kalebjs/Documents/cs236/Datalog Program
+# Install script for directory: /users/guest/k/kalebjs/Documents/cs236/Datalog
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -3,12 +3,11 @@
 
 #include "Automaton.h"
 
-class QuestionMarkAutomaton : public Automaton
-{
+class QuestionMarkAutomaton : public Automaton {
 public:
     QuestionMarkAutomaton() : Automaton(TokenType::Q_MARK) {}  // Call the base constructor
 
-    void S0(const std::string& input);
+    void S0(const std::string &input);
 };
 
 #endif // QUESTIONMARKAUTOMATON_H

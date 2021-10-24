@@ -4,16 +4,17 @@
 
 #include "DatalogProgram.h"
 
-void DatalogProgram::AddFact(Predicate fact)  {
+void DatalogProgram::AddFact(Predicate fact) {
     facts.push_back(fact);
     for (long unsigned int i = 0; i < fact.GetElements().size(); i++) {
         if (fact.GetElements().at(i)->GetTokenType() == TokenType::STRING &&
-                !std::count(domain.begin(), domain.end(), fact.GetElements().at(i)->GetDescription())) {
+            !std::count(domain.begin(), domain.end(), fact.GetElements().at(i)->GetDescription())) {
             domain.push_back(fact.GetElements().at(i)->GetDescription());
         }
     }
     std::sort(domain.begin(), domain.end());
 }
+
 std::string DatalogProgram::toString() {
     std::string datalogStr = "";
     datalogStr += "Schemes(" + std::to_string(schemes.size()) + "):\n";

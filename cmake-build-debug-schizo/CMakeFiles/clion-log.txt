@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/users/guest/k/kalebjs/Documents/cs236/Datalog Program"
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /users/guest/k/kalebjs/Documents/cs236/Datalog
 -- Configuring done
 -- Generating done
--- Build files have been written to: /users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo
+-- Build files have been written to: /users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo

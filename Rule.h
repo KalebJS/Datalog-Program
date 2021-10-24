@@ -15,11 +15,15 @@ private:
     Predicate headPredicate;
     std::vector<Predicate> predicates;
 public:
-    Rule ();
-    ~Rule ();
-    std::string toString ();
-    void AddPredicate (Predicate predicate);
-    void SetHeadPredicate (Predicate predicate);
+    Rule();
+
+    ~Rule();
+
+    std::string toString();
+
+    void AddPredicate(Predicate predicate);
+
+    void SetHeadPredicate(Predicate predicate);
 };
 
 #endif //RULE_H

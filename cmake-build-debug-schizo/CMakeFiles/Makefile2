@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/users/guest/k/kalebjs/Documents/cs236/Datalog Program"
+CMAKE_SOURCE_DIR = /users/guest/k/kalebjs/Documents/cs236/Datalog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo"
+CMAKE_BINARY_DIR = /users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/Project_1.dir/clean
 CMakeFiles/Project_1.dir/all:
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/depend
 	$(MAKE) -f CMakeFiles/Project_1.dir/build.make CMakeFiles/Project_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25 "Built target Project_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29 "Built target Project_1"
 .PHONY : CMakeFiles/Project_1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Project_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles 29
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Project_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/users/guest/k/kalebjs/Documents/cs236/Datalog Program/cmake-build-debug-schizo/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles 0
 .PHONY : CMakeFiles/Project_1.dir/rule
 
 # Convenience name for target.

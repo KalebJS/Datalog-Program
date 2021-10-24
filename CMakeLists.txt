@@ -54,4 +54,12 @@ add_executable(Project_1
         Rule.h
         Parameter.cpp
         Parameter.h
+        Interpreter.cpp
+        Interpreter.h
+        Relation.cpp
+        Relation.h
+        Header.cpp
+        Header.h
+        Tuple.cpp
+        Tuple.h
         )

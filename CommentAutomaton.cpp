@@ -1,79 +1,72 @@
 #include "CommentAutomaton.h"
 #include <iostream>
 
-void CommentAutomaton::S0(const std::string& input) {
+void CommentAutomaton::S0(const std::string &input) {
     if (input[index] == '#') {
         inputRead++;
         index++;
         S1(input);
-    }
-    else {
+    } else {
         Serr();
     }
 }
-void CommentAutomaton::S1(const std::string& input) {
+
+void CommentAutomaton::S1(const std::string &input) {
     if (index == static_cast<int>(input.length())) {
         ToUndefinedType();
-    }
-    else if (input[index] == '|') {
+    } else if (input[index] == '|') {
         inputRead++;
         index++;
         S3(input);
-    }
-    else {
+    } else {
         inputRead++;
         index++;
         S2(input);
     }
 }
-void CommentAutomaton::S2(const std::string& input) {
+
+void CommentAutomaton::S2(const std::string &input) {
     if (index == static_cast<int>(input.length())) {
         ToUndefinedType();
-    }
-    else if (input[index] == '\n') {
+    } else if (input[index] == '\n') {
         return;
-    }
-    else {
+    } else {
         inputRead++;
         index++;
         S2(input);
     }
 }
-void CommentAutomaton::S3(const std::string& input) {
+
+void CommentAutomaton::S3(const std::string &input) {
     if (index == static_cast<int>(input.length())) {
         ToUndefinedType();
-    }
-    else if (input[index] == '|') {
+    } else if (input[index] == '|') {
         inputRead++;
         index++;
         S4(input);
-    }
-    else if (input[index] == '\n') {
+    } else if (input[index] == '\n') {
         inputRead++;
         index++;
         newLines++;
         S3(input);
-    }
-    else {
+    } else {
         inputRead++;
         index++;
         S3(input);
     }
 }
-void CommentAutomaton::S4(const std::string& input) {
+
+void CommentAutomaton::S4(const std::string &input) {
     if (index == static_cast<int>(input.length())) {
         ToUndefinedType();
-    }
-    else if (input[index] == '#') {
+    } else if (input[index] == '#') {
         inputRead++;
-    }
-    else if (input[index] == '\n') {
+    } else if (input[index] == '\n') {
         inputRead++;
         index++;
         newLines++;
         S3(input);
-    }
-    else {
+    } else {
         inputRead++;
         index++;
         S3(input);

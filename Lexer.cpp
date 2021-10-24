@@ -23,11 +23,11 @@ Lexer::Lexer() {
 }
 
 Lexer::~Lexer() {
-    for (Automaton* automaton : automata) {
+    for (Automaton *automaton: automata) {
         delete automaton;
     }
     automata.clear();;
-    for (Token* token : tokens) {
+    for (Token *token: tokens) {
         delete token;
     }
     tokens.clear();
@@ -54,11 +54,11 @@ void Lexer::CreateAutomata() {
     automata.push_back(new IdentifiersAutomaton());
 }
 
-void Lexer::Run(std::string& input) {
+void Lexer::Run(std::string &input) {
     int lineNumber = 1;
     // While there are more characters to tokenize
     while (input.size() > 0) {
-        Automaton* maxAutomaton = automata.at(0);
+        Automaton *maxAutomaton = automata.at(0);
         int maxRead = 0;
 
         if (isspace(input.at(0)) || input.at(0) == '\t' || input.at(0) == '\n') {
@@ -81,15 +81,15 @@ void Lexer::Run(std::string& input) {
 
         // Here is the "Max" part of the algorithm
         if (maxRead > 0) {
-            Token* newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
+            Token *newToken = maxAutomaton->CreateToken(input.substr(0, maxRead), lineNumber);
             lineNumber += maxAutomaton->NewLinesRead();
             tokens.push_back(newToken);
         }
-        // No automaton accepted input®
-        // Create single character undefined token
+            // No automaton accepted input®
+            // Create single character undefined token
         else {
             maxRead = 1;
-            Token* newToken = new Token(TokenType::UNDEFINED, input.substr(0,maxRead), lineNumber);
+            Token *newToken = new Token(TokenType::UNDEFINED, input.substr(0, maxRead), lineNumber);
             tokens.push_back(newToken);
         }
 
@@ -98,7 +98,7 @@ void Lexer::Run(std::string& input) {
     tokens.push_back(new Token(TokenType::EOF_TYPE, "", lineNumber));
 }
 
-void Lexer::PrintTokens () {
+void Lexer::PrintTokens() {
     for (long unsigned int i = 0; i < tokens.size(); i++) {
         std::cout << tokens.at(i)->ToString() << std::endl;
     }

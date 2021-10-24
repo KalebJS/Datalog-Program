@@ -1,5 +1,6 @@
 #ifndef TOKEN_H
 #define TOKEN_H
+
 #include <string>
 
 enum class TokenType {
@@ -23,8 +24,7 @@ enum class TokenType {
     UNDEFINED
 };
 
-class Token
-{
+class Token {
 private:
     TokenType type;
     std::string description;
@@ -32,12 +32,16 @@ private:
 
 public:
     Token(TokenType type, std::string description, int line);
+
     virtual ~Token() = default;
 
     std::string GetDescription() { return description; }
-    std::string ToString ();
-    std::string TokenTypeToString (TokenType tokenType);
-    TokenType GetTokenType ();
+
+    std::string ToString();
+
+    std::string TokenTypeToString(TokenType tokenType);
+
+    TokenType GetTokenType();
 };
 
 #endif // TOKEN_H

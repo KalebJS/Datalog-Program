@@ -2,3 +2,5 @@ cmake-build-debug-local/
 cmake-build-debug-schizo/
 project2-exampleIO/
 makefile
+.idea/*
+cmake-build-debug-schizo/

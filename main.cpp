@@ -4,7 +4,7 @@
 #include "Lexer.h"
 #include "Parser.h"
 
-int main(int argc, char** argv) {
+int main(int argc, char **argv) {
 
     if (argc != 2) {
         std::cout << "usage: " << argv[0] << " input_file" << std::endl;
@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     std::ifstream input(filename); //taking file as inputstream
 
     std::string input_str;
-    if(input) {
+    if (input) {
         std::stringstream ss;
         ss << input.rdbuf(); // reading data
         input_str = ss.str();
@@ -23,8 +23,8 @@ int main(int argc, char** argv) {
         return 1;
     }
 
-    Lexer* lexer = new Lexer();
-    Parser* parser = new Parser();
+    Lexer *lexer = new Lexer();
+    Parser *parser = new Parser();
 
     lexer->Run(input_str);
 

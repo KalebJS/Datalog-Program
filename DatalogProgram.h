@@ -12,6 +12,10 @@
 #include <iostream>
 #include <algorithm>
 
+//a Datalog program is represented by a database.
+// Each scheme in the program defines a relation in the database.
+// Each fact in the program defines a tuple in a relation.
+
 class DatalogProgram {
 private:
     std::vector<Predicate> schemes;

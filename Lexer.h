@@ -1,14 +1,14 @@
 #ifndef LEXER_H
 #define LEXER_H
+
 #include <vector>
 #include "Automaton.h"
 #include "Token.h"
 
-class Lexer
-{
+class Lexer {
 private:
-    std::vector<Automaton*> automata;
-    std::vector<Token*> tokens;
+    std::vector<Automaton *> automata;
+    std::vector<Token *> tokens;
 
 
     void CreateAutomata();
@@ -17,10 +17,14 @@ private:
 
 public:
     Lexer();
+
     ~Lexer();
-    void Run(std::string& input);
-    void PrintTokens ();
-    std::vector<Token*> GetTokens () { return tokens; }
+
+    void Run(std::string &input);
+
+    void PrintTokens();
+
+    std::vector<Token *> GetTokens() { return tokens; }
 };
 
 #endif // LEXER_H

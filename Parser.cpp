@@ -2,10 +2,10 @@
 #include "Parser.h"
 
 
-std::queue<Token*> Parser::FilterComments(std::vector<Token*> unfilteredTokens) {
-    std::queue<Token*> filteredTokens;
+std::queue<Token *> Parser::FilterComments(std::vector<Token *> unfilteredTokens) {
+    std::queue<Token *> filteredTokens;
     for (long unsigned int i = 0; i < unfilteredTokens.size(); i++) {
-        Token* token = unfilteredTokens.at(i);
+        Token *token = unfilteredTokens.at(i);
         // ignore comments
         if (token->GetTokenType() == TokenType::COMMENT) {
             continue;
@@ -15,7 +15,8 @@ std::queue<Token*> Parser::FilterComments(std::vector<Token*> unfilteredTokens) 
     }
     return filteredTokens;
 }
-bool Parser::Parse(std::vector<Token*> tokenVector) {
+
+bool Parser::Parse(std::vector<Token *> tokenVector) {
     tokens = FilterComments(tokenVector);
     // datalogProgram	->	SCHEMES COLON scheme schemeList FACTS COLON factList RULES COLON ruleList QUERIES COLON query queryList EOF
     try {
@@ -36,19 +37,21 @@ bool Parser::Parse(std::vector<Token*> tokenVector) {
         VerifyToken(TokenType::EOF_TYPE);
         result += "Success!";
         return true;
-    } catch (Token* token) {
+    } catch (Token *token) {
         result += "Failure! \n" + token->ToString();
         return false;
     }
 }
-void Parser::VerifyToken (TokenType type) {
+
+void Parser::VerifyToken(TokenType type) {
     if (tokens.front()->GetTokenType() != type) {
         throw tokens.front();
     } else {
         tokens.pop();
     }
 }
-void Parser::VerifyToken (TokenType type, Predicate& predicate) {
+
+void Parser::VerifyToken(TokenType type, Predicate &predicate) {
     if (tokens.front()->GetTokenType() != type) {
         throw tokens.front();
     } else {
@@ -56,7 +59,8 @@ void Parser::VerifyToken (TokenType type, Predicate& predicate) {
         tokens.pop();
     }
 }
-void Parser::VerifyToken (TokenType type, Rule& rule) {
+
+void Parser::VerifyToken(TokenType type, Rule &rule) {
     if (tokens.front()->GetTokenType() != type) {
         throw tokens.front();
     } else {
@@ -64,42 +68,48 @@ void Parser::VerifyToken (TokenType type, Rule& rule) {
         tokens.pop();
     }
 }
-bool Parser::CompareNextTokenTypes (Token* token, TokenType type) {
+
+bool Parser::CompareNextTokenTypes(Token *token, TokenType type) {
     if (token->GetTokenType() != type) {
         return false;
     } else {
         return true;
     }
 }
-void Parser::SchemeList () {
+
+void Parser::SchemeList() {
     // schemeList	->	scheme schemeList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         Scheme();
         SchemeList();
     }
 }
-void Parser::FactList () {
+
+void Parser::FactList() {
     // factList	->	fact factList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         Fact();
         FactList();
     }
 }
-void Parser::RuleList () {
+
+void Parser::RuleList() {
     // ruleList	->	rule ruleList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         RuleMethod();
         RuleList();
     }
 }
-void Parser::QueryList () {
+
+void Parser::QueryList() {
     // queryList	->	query queryList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         Query();
         QueryList();
     }
 }
-void Parser::Scheme () {
+
+void Parser::Scheme() {
     // scheme  -> 	ID LEFT_PAREN ID idList RIGHT_PAREN
     Predicate scheme = Predicate();
     VerifyToken(TokenType::ID, scheme);
@@ -109,7 +119,8 @@ void Parser::Scheme () {
     VerifyToken(TokenType::RIGHT_PAREN, scheme);
     datalog.AddScheme(scheme);
 }
-void Parser::Fact () {
+
+void Parser::Fact() {
     // fact    	->	ID LEFT_PAREN STRING stringList RIGHT_PAREN PERIOD
     Predicate fact = Predicate();
     VerifyToken(TokenType::ID, fact);
@@ -120,7 +131,8 @@ void Parser::Fact () {
     VerifyToken(TokenType::PERIOD, fact);
     datalog.AddFact(fact);
 }
-void Parser::RuleMethod () {
+
+void Parser::RuleMethod() {
     // rule    	->	headPredicate COLON_DASH predicate predicateList PERIOD
     Rule rule = Rule();
     HeadPredicate(rule);
@@ -130,14 +142,16 @@ void Parser::RuleMethod () {
     VerifyToken(TokenType::PERIOD);
     datalog.AddRule(rule);
 }
-void Parser::Query () {
+
+void Parser::Query() {
     // query -> predicate Q_MARK
     Predicate query = Predicate();
     PredicateMethod(query);
     VerifyToken(TokenType::Q_MARK, query);
     datalog.AddQuery(query);
 }
-void Parser::HeadPredicate () {
+
+void Parser::HeadPredicate() {
     // headPredicate	->	ID LEFT_PAREN ID idList RIGHT_PAREN
     VerifyToken(TokenType::ID);
     VerifyToken(TokenType::LEFT_PAREN);
@@ -145,7 +159,8 @@ void Parser::HeadPredicate () {
     IDList();
     VerifyToken(TokenType::RIGHT_PAREN);
 }
-void Parser::HeadPredicate (Rule& rule) {
+
+void Parser::HeadPredicate(Rule &rule) {
     // headPredicate	->	ID LEFT_PAREN ID idList RIGHT_PAREN
     Predicate headPredicate = Predicate();
     VerifyToken(TokenType::ID, headPredicate);
@@ -155,7 +170,8 @@ void Parser::HeadPredicate (Rule& rule) {
     VerifyToken(TokenType::RIGHT_PAREN, headPredicate);
     rule.SetHeadPredicate(headPredicate);
 }
-void Parser::PredicateMethod () {
+
+void Parser::PredicateMethod() {
     // predicate	->	ID LEFT_PAREN parameter parameterList RIGHT_PAREN
     VerifyToken(TokenType::ID);
     VerifyToken(TokenType::LEFT_PAREN);
@@ -163,7 +179,8 @@ void Parser::PredicateMethod () {
     ParameterList();
     VerifyToken(TokenType::RIGHT_PAREN);
 }
-void Parser::PredicateMethod (Predicate& predicate) {
+
+void Parser::PredicateMethod(Predicate &predicate) {
     // predicate	->	ID LEFT_PAREN parameter parameterList RIGHT_PAREN
     VerifyToken(TokenType::ID, predicate);
     VerifyToken(TokenType::LEFT_PAREN, predicate);
@@ -171,7 +188,8 @@ void Parser::PredicateMethod (Predicate& predicate) {
     ParameterList(predicate);
     VerifyToken(TokenType::RIGHT_PAREN, predicate);
 }
-void Parser::PredicateMethod (Rule& rule) {
+
+void Parser::PredicateMethod(Rule &rule) {
     // predicate	->	ID LEFT_PAREN parameter parameterList RIGHT_PAREN
     Predicate predicate = Predicate();
     VerifyToken(TokenType::ID, predicate);
@@ -181,7 +199,8 @@ void Parser::PredicateMethod (Rule& rule) {
     VerifyToken(TokenType::RIGHT_PAREN, predicate);
     rule.AddPredicate(predicate);
 }
-void Parser::PredicateList () {
+
+void Parser::PredicateList() {
     // predicateList	->	COMMA predicate predicateList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA);
@@ -189,7 +208,8 @@ void Parser::PredicateList () {
         PredicateList();
     }
 }
-void Parser::PredicateList (Rule& rule) {
+
+void Parser::PredicateList(Rule &rule) {
     // predicateList	->	COMMA predicate predicateList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA);
@@ -197,7 +217,8 @@ void Parser::PredicateList (Rule& rule) {
         PredicateList(rule);
     }
 }
-void Parser::ParameterList () {
+
+void Parser::ParameterList() {
     // parameterList	-> 	COMMA parameter parameterList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA);
@@ -205,7 +226,8 @@ void Parser::ParameterList () {
         ParameterList();
     }
 }
-void Parser::ParameterList (Predicate& predicate) {
+
+void Parser::ParameterList(Predicate &predicate) {
     // parameterList	-> 	COMMA parameter parameterList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA, predicate);
@@ -213,7 +235,8 @@ void Parser::ParameterList (Predicate& predicate) {
         ParameterList(predicate);
     }
 }
-void Parser::StringList () {
+
+void Parser::StringList() {
     // stringList	-> 	COMMA STRING stringList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA);
@@ -221,7 +244,8 @@ void Parser::StringList () {
         StringList();
     }
 }
-void Parser::StringList (Predicate& predicate) {
+
+void Parser::StringList(Predicate &predicate) {
     // stringList	-> 	COMMA STRING stringList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA, predicate);
@@ -229,7 +253,8 @@ void Parser::StringList (Predicate& predicate) {
         StringList(predicate);
     }
 }
-void Parser::IDList () {
+
+void Parser::IDList() {
     // idList  	-> 	COMMA ID idList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA);
@@ -237,7 +262,8 @@ void Parser::IDList () {
         IDList();
     }
 }
-void Parser::IDList (Predicate& predicate) {
+
+void Parser::IDList(Predicate &predicate) {
     // idList  	-> 	COMMA ID idList | lambda
     if (CompareNextTokenTypes(tokens.front(), TokenType::COMMA)) {
         VerifyToken(TokenType::COMMA, predicate);
@@ -245,25 +271,27 @@ void Parser::IDList (Predicate& predicate) {
         IDList(predicate);
     }
 }
-void Parser::Parameter () {
+
+void Parser::Parameter() {
     // parameter	->	STRING | ID
     if (CompareNextTokenTypes(tokens.front(), TokenType::STRING)) {
         VerifyToken(TokenType::STRING);
     } else if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         VerifyToken(TokenType::ID);
     } else {
-        Token* token = tokens.front();
+        Token *token = tokens.front();
         throw token;
     }
 }
-void Parser::Parameter (Predicate& predicate) {
+
+void Parser::Parameter(Predicate &predicate) {
     // parameter	->	STRING | ID
     if (CompareNextTokenTypes(tokens.front(), TokenType::STRING)) {
         VerifyToken(TokenType::STRING, predicate);
     } else if (CompareNextTokenTypes(tokens.front(), TokenType::ID)) {
         VerifyToken(TokenType::ID, predicate);
     } else {
-        Token* token = tokens.front();
+        Token *token = tokens.front();
         throw token;
     }
 }

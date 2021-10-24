@@ -7,13 +7,17 @@
 
 class Predicate {
 private:
-    std::vector<Token*> elements;
+    std::vector<Token *> elements;
 public:
     Predicate();
+
     ~Predicate();
-    std::string toString ();
-    void AddElement (Token* token);
-    std::vector<Token*> GetElements () { return elements; }
+
+    std::string toString();
+
+    void AddElement(Token *token);
+
+    std::vector<Token *> GetElements() { return elements; }
 };
 
 #endif
