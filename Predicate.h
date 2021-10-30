@@ -4,10 +4,12 @@
 #include <string>
 #include <vector>
 #include "Token.h"
+#include "Parameter.h"
 
 class Predicate {
 private:
-    std::vector<Token *> elements;
+    std::string id;
+    std::vector<Parameter> parameters;
 public:
     Predicate();
 
@@ -15,9 +17,13 @@ public:
 
     std::string toString();
 
-    void AddElement(Token *token);
+    void AddParameter(Token *token);
 
-    std::vector<Token *> GetElements() { return elements; }
+    void SetId(Token *token);
+
+    std::string GetId() { return id; }
+
+    std::vector<Parameter> GetParameters() { return parameters; }
 };
 
 #endif

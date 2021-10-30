@@ -52,6 +52,20 @@ iostream
 Automaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Automaton.h
 
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.cpp
+sstream
+-
+Database.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.h
+vector
+-
+Relation.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Relation.h
+Predicate.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Predicate.h
+
 /users/guest/k/kalebjs/Documents/cs236/Datalog/DatalogProgram.cpp
 DatalogProgram.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/DatalogProgram.h
@@ -63,6 +77,8 @@ Rule.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Rule.h
 Token.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Token.h
+Database.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.h
 string
 -
 vector
@@ -80,6 +96,22 @@ FactsAutomaton.h
 Automaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Automaton.h
 
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Header.cpp
+iostream
+-
+algorithm
+-
+Header.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Header.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Header.h
+vector
+-
+string
+-
+Parameter.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Parameter.h
+
 /users/guest/k/kalebjs/Documents/cs236/Datalog/IdentifiersAutomaton.cpp
 IdentifiersAutomaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/IdentifiersAutomaton.h
@@ -87,6 +119,14 @@ IdentifiersAutomaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/IdentifiersAutomaton.h
 Automaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Automaton.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Interpreter.cpp
+Interpreter.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Interpreter.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Interpreter.h
+DatalogProgram.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/DatalogProgram.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog/LeftParenAutomaton.cpp
 LeftParenAutomaton.h
@@ -159,6 +199,8 @@ Parameter.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Parameter.h
 string
 -
+Token.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Token.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Parser.cpp
 iostream
@@ -201,6 +243,8 @@ vector
 -
 Token.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Token.h
+Parameter.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Parameter.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog/QueriesAutomaton.cpp
 QueriesAutomaton.h
@@ -217,6 +261,24 @@ QuestionMarkAutomaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/QuestionMarkAutomaton.h
 Automaton.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Automaton.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Relation.cpp
+sstream
+-
+Relation.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Relation.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Relation.h
+set
+-
+string
+-
+Tuple.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Tuple.h
+Header.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Header.h
+Predicate.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Predicate.h
 
 /users/guest/k/kalebjs/Documents/cs236/Datalog/RightParenAutomaton.cpp
 RightParenAutomaton.h
@@ -274,6 +336,18 @@ Token.h
 string
 -
 
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Tuple.cpp
+Tuple.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Tuple.h
+
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Tuple.h
+vector
+-
+string
+-
+Parameter.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Parameter.h
+
 /users/guest/k/kalebjs/Documents/cs236/Datalog/main.cpp
 iostream
 -
@@ -285,4 +359,6 @@ Lexer.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Lexer.h
 Parser.h
 /users/guest/k/kalebjs/Documents/cs236/Datalog/Parser.h
+Interpreter.h
+/users/guest/k/kalebjs/Documents/cs236/Datalog/Interpreter.h
 

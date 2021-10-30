@@ -4,9 +4,11 @@
 
 #ifndef DATALOGPROGRAM_H
 #define DATALOGPROGRAM_H
+
 #include "Predicate.h"
 #include "Rule.h"
 #include "Token.h"
+#include "Database.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -25,15 +27,27 @@ private:
     std::vector<std::string> domain;
 
 public:
-    DatalogProgram() {}
-    ~DatalogProgram() {}
-    void AddScheme (Predicate scheme) { schemes.push_back(scheme); }
-    void AddFact (Predicate fact);
-    void AddQuery (Predicate query) { queries.push_back(query); }
-    void AddRule (Rule rule) { rules.push_back(rule); }
+    DatalogProgram() = default;
 
-    std::string toString ();
+    ~DatalogProgram() = default;
 
+    void AddScheme(const Predicate &scheme) { schemes.push_back(scheme); }
+
+    void AddFact(Predicate fact);
+
+    void AddQuery(const Predicate &query) { queries.push_back(query); }
+
+    void AddRule(const Rule &rule) { rules.push_back(rule); }
+
+    std::string toString();
+
+    std::vector<Predicate> getSchemes() { return schemes; }
+
+    std::vector<Predicate> getFacts() { return facts; }
+
+    std::vector<Predicate> getQueries() { return queries; }
+
+    std::vector<Rule> getRules() { return rules; }
 };
 
 #endif //DATALOGPROGRAM_H

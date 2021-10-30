@@ -1,0 +1,3 @@
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kalebsmith/ownCloud/School/CS 236/Datalog/cmake-build-debug/CMakeFiles/Project_1.dir

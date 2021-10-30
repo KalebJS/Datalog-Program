@@ -6,14 +6,29 @@
 #define PARAMETER_H
 
 #include <string>
+#include "Token.h"
+
+enum class ParameterType {
+    STRING,
+    ID
+};
 
 class Parameter {
 private:
-
+    ParameterType type;
+    std::string value;
 public:
-    std::string toString();
+    Parameter(Token *token);
 
+    ~Parameter();
 
+    std::string TokenTypeToString(ParameterType parameterType);
+
+    std::string ToString();
+
+    std::string GetValue() { return value; }
+
+    ParameterType GetType() { return type; }
 };
 
 

@@ -3,6 +3,10 @@
 #include <sstream>
 #include "Lexer.h"
 #include "Parser.h"
+#include "Interpreter.h"
+
+void CleanUp(DatalogProgram *datalogProgram, Database *database, Parser *parser, Lexer *lexer, Interpreter
+*interpreter);
 
 int main(int argc, char **argv) {
 
@@ -23,19 +27,32 @@ int main(int argc, char **argv) {
         return 1;
     }
 
+    DatalogProgram *program = new DatalogProgram();
+    Database *database = new Database();
     Lexer *lexer = new Lexer();
-    Parser *parser = new Parser();
+    Parser *parser = new Parser(program);
+    Interpreter *interpreter = new Interpreter(program, database);
 
     lexer->Run(input_str);
 
     bool wasParsed = parser->Parse(lexer->GetTokens());
-    std::cout << parser->GetResult() << std::endl;
-    if (wasParsed) {
-        std::cout << parser->GetDatalog().toString();
+    if (!wasParsed) {
+        CleanUp(program, database, parser, lexer, interpreter);
+        exit(500);
     }
 
-    delete lexer;
-    delete parser;
+    interpreter->Interpret();
+
+    CleanUp(program, database, parser, lexer, interpreter);
 
     return 0;
+}
+
+void CleanUp(DatalogProgram *datalogProgram, Database *database, Parser *parser, Lexer *lexer, Interpreter
+*interpreter) {
+    delete datalogProgram;
+    delete database;
+    delete interpreter;
+    delete parser;
+    delete lexer;
 }

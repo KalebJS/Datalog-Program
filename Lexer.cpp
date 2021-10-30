@@ -26,7 +26,7 @@ Lexer::~Lexer() {
     for (Automaton *automaton: automata) {
         delete automaton;
     }
-    automata.clear();;
+    automata.clear();
     for (Token *token: tokens) {
         delete token;
     }

@@ -6,10 +6,10 @@
 
 void DatalogProgram::AddFact(Predicate fact) {
     facts.push_back(fact);
-    for (long unsigned int i = 0; i < fact.GetElements().size(); i++) {
-        if (fact.GetElements().at(i)->GetTokenType() == TokenType::STRING &&
-            !std::count(domain.begin(), domain.end(), fact.GetElements().at(i)->GetDescription())) {
-            domain.push_back(fact.GetElements().at(i)->GetDescription());
+    for (long unsigned int i = 0; i < fact.GetParameters().size(); i++) {
+        if (fact.GetParameters().at(i).GetType() == ParameterType::STRING &&
+            !std::count(domain.begin(), domain.end(), fact.GetParameters().at(i).GetValue())) {
+            domain.push_back(fact.GetParameters().at(i).GetValue());
         }
     }
     std::sort(domain.begin(), domain.end());

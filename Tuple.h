@@ -8,8 +8,33 @@
 #define DATALOG_TUPLE_H
 
 
-class Tuple {
+#include <vector>
+#include <string>
+#include "Parameter.h"
 
+class Tuple {
+private:
+    std::vector<std::string> values;
+public:
+    Tuple(std::vector<Parameter> parameters);
+
+    std::vector<std::string> GetValues() { return values; }
+
+    bool operator<(const Tuple &rhs) const;
+
+    bool operator>(const Tuple &rhs) const;
+
+    bool operator<=(const Tuple &rhs) const;
+
+    bool operator>=(const Tuple &rhs) const;
+
+    bool ContainsValueAtIndex(int index, const std::string &value);
+
+    void Project(const std::vector<int>& indexList);
+
+    std::string GetValueAtIndex(int index) { return values.at(index); }
+
+    std::string ToString();
 };
 
 

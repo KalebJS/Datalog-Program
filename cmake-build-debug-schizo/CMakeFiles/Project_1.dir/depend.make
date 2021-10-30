@@ -26,21 +26,52 @@ CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.cpp
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../CommentAutomaton.h
 CMakeFiles/Project_1.dir/CommentAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Database.cpp
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Database.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Database.cpp.o: ../Tuple.h
+
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Database.h
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../DatalogProgram.cpp
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Relation.h
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/DatalogProgram.cpp.o: ../Tuple.h
 
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.cpp
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../FactsAutomaton.h
 CMakeFiles/Project_1.dir/FactsAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Header.cpp
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Header.cpp.o: ../Token.h
+
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: ../IdentifiersAutomaton.cpp
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: ../IdentifiersAutomaton.h
 CMakeFiles/Project_1.dir/IdentifiersAutomaton.cpp.o: ../Token.h
+
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Database.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Interpreter.cpp
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Interpreter.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Rule.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Interpreter.cpp.o: ../Tuple.h
 
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/LeftParenAutomaton.cpp.o: ../LeftParenAutomaton.cpp
@@ -75,19 +106,26 @@ CMakeFiles/Project_1.dir/MultiplyAutomaton.cpp.o: ../Token.h
 
 CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Parameter.cpp
 CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Parameter.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Database.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parser.cpp
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Parser.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Relation.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/Parser.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Parser.cpp.o: ../Tuple.h
 
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.cpp
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: ../PeriodAutomaton.h
 CMakeFiles/Project_1.dir/PeriodAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Predicate.cpp
 CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Predicate.h
 CMakeFiles/Project_1.dir/Predicate.cpp.o: ../Token.h
@@ -102,11 +140,20 @@ CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o: ../QuestionMarkAutomaton.c
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o: ../QuestionMarkAutomaton.h
 CMakeFiles/Project_1.dir/QuestionMarkAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Relation.cpp
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Relation.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Relation.cpp.o: ../Tuple.h
+
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: ../Automaton.h
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.cpp
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: ../RightParenAutomaton.h
 CMakeFiles/Project_1.dir/RightParenAutomaton.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Rule.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Predicate.h
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.cpp
 CMakeFiles/Project_1.dir/Rule.cpp.o: ../Rule.h
@@ -130,12 +177,23 @@ CMakeFiles/Project_1.dir/StringAutomaton.cpp.o: ../Token.h
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.cpp
 CMakeFiles/Project_1.dir/Token.cpp.o: ../Token.h
 
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Parameter.h
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Tuple.cpp
+CMakeFiles/Project_1.dir/Tuple.cpp.o: ../Tuple.h
+
 CMakeFiles/Project_1.dir/main.cpp.o: ../Automaton.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Database.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../DatalogProgram.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Header.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Interpreter.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Lexer.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Parameter.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Parser.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Predicate.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Relation.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Rule.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../Token.h
+CMakeFiles/Project_1.dir/main.cpp.o: ../Tuple.h
 CMakeFiles/Project_1.dir/main.cpp.o: ../main.cpp
 

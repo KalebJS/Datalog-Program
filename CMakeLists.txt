@@ -62,4 +62,6 @@ add_executable(Project_1
         Header.h
         Tuple.cpp
         Tuple.h
+        Database.cpp
+        Database.h
         )

@@ -2,4 +2,53 @@
 // Created by Kaleb Smith on 10/23/21.
 //
 
+#include <iostream>
 #include "Tuple.h"
+
+Tuple::Tuple(std::vector<Parameter> parameters) {
+    for (auto &parameter: parameters) {
+        values.push_back(parameter.GetValue());
+    }
+}
+
+bool Tuple::ContainsValueAtIndex(int index, const std::string &value) {
+    if (values.at(index) == value) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+bool Tuple::operator<(const Tuple &rhs) const {
+    return values < rhs.values;
+}
+
+bool Tuple::operator>(const Tuple &rhs) const {
+    return rhs < *this;
+}
+
+bool Tuple::operator<=(const Tuple &rhs) const {
+    return !(rhs < *this);
+}
+
+bool Tuple::operator>=(const Tuple &rhs) const {
+    return !(*this < rhs);
+}
+
+void Tuple::Project(const std::vector<int> &indexList) {
+    std::vector<std::string> projectedValues;
+    projectedValues.reserve(indexList.size());
+    for (int index: indexList) {
+        projectedValues.push_back(values.at(index));
+    }
+    values = projectedValues;
+}
+
+std::string Tuple::ToString() {
+    std::string tupleString = "( ";
+    for (auto &value: values) {
+        tupleString += value + " ";
+    }
+    tupleString += ")";
+    return tupleString;
+}

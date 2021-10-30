@@ -117,6 +117,12 @@
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog/CommentAutomaton.h">
 			<Option target="Project_1"/>
 		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.cpp">
+			<Option target="Project_1"/>
+		</Unit>
+		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog/Database.h">
+			<Option target="Project_1"/>
+		</Unit>
 		<Unit filename="/users/guest/k/kalebjs/Documents/cs236/Datalog/DatalogProgram.cpp">
 			<Option target="Project_1"/>
 		</Unit>

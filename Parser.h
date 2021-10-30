@@ -10,17 +10,19 @@
 
 class Parser {
 private:
-    DatalogProgram datalog;
+    DatalogProgram *datalogProgram;
     std::queue<Token *> tokens;
     std::string result;
 public:
+    Parser(DatalogProgram *datalogProgramPointer);
+
     std::queue<Token *> FilterComments(std::vector<Token *> unfilteredTokens);
 
     bool Parse(std::vector<Token *> tokenVector);
 
     void VerifyToken(TokenType type);
 
-    void VerifyToken(TokenType type, Predicate &predicate);
+    Token *VerifyToken(TokenType type, Predicate &predicate);
 
     void VerifyToken(TokenType type, Rule &rule);
 
@@ -72,7 +74,7 @@ public:
 
     void Parameter(Predicate &predicate);
 
-    DatalogProgram GetDatalog() { return datalog; }
+    DatalogProgram *GetDatalog() { return datalogProgram; }
 
     std::string GetResult() { return result; }
 };
