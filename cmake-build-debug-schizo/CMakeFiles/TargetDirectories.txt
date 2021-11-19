@@ -1,3 +1,0 @@
-/users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles/rebuild_cache.dir
-/users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles/edit_cache.dir
-/users/guest/k/kalebjs/Documents/cs236/Datalog/cmake-build-debug-schizo/CMakeFiles/Project_1.dir
