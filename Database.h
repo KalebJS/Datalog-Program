@@ -11,7 +11,7 @@
 
 class Database {
 private:
-    std::vector<Relation> relations;
+    std::vector<Relation *> relations;
 public:
     Database();
 
@@ -21,9 +21,11 @@ public:
 
     void AddRelationParameters(Predicate fact);
 
-    Relation FindRelation(const std::string& relationName);
+    Relation *FindRelation(const std::string &relationName);
 
     std::string ToString();
+
+    bool ContainsRelation(Relation *relation);
 };
 
 

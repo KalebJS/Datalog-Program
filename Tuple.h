@@ -11,12 +11,15 @@
 #include <vector>
 #include <string>
 #include "Parameter.h"
+#include "Header.h"
 
 class Tuple {
 private:
+    Tuple(const std::vector<std::string> &parameters);
+
     std::vector<std::string> values;
 public:
-    Tuple(std::vector<Parameter> parameters);
+    explicit Tuple(std::vector<Parameter> parameters);
 
     std::vector<std::string> GetValues() { return values; }
 
@@ -28,13 +31,15 @@ public:
 
     bool operator>=(const Tuple &rhs) const;
 
-    bool ContainsValueAtIndex(int index, const std::string &value);
+    bool ContainsValueAtIndex(unsigned index, const std::string &value);
 
-    void Project(const std::vector<int>& indexList);
+    void Project(const std::vector<int> &indexList);
 
-    std::string GetValueAtIndex(int index) { return values.at(index); }
+    std::string GetValueAtIndex(unsigned index);
 
     std::string ToString();
+
+    Tuple NaturalJoin(Header header, Tuple otherTuple, Header otherHeader, Header joinedHeader);
 };
 
 

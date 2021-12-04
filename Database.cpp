@@ -10,13 +10,22 @@ Database::Database() = default;
 Database::~Database() = default;
 
 void Database::AddRelation(const Predicate &scheme) {
-    relations.push_back(Relation(scheme));
+    relations.emplace_back(new Relation(scheme));
+}
+
+bool Database::ContainsRelation(Relation *relation) {
+    for (auto &r: relations) {
+        if (r->GetName() == relation->GetName()) {
+            return true;
+        }
+    }
+    return false;
 }
 
 void Database::AddRelationParameters(Predicate fact) {
     for (auto &relation: relations) {
-        if (relation.GetName() == fact.GetId()) {
-            relation.AddTuple(fact);
+        if (relation->GetName() == fact.GetId()) {
+            relation->AddTuple(fact);
             return;
         }
     }
@@ -25,14 +34,14 @@ void Database::AddRelationParameters(Predicate fact) {
 std::string Database::ToString() {
     std::stringstream ss;
     for (auto &relation: relations) {
-        ss << relation.ToString() << std::endl;
+        ss << relation->ToString() << std::endl;
     }
     return ss.str();
 }
 
-Relation Database::FindRelation(const std::string& relationName) {
+Relation *Database::FindRelation(const std::string &relationName) {
     for (auto &relation: relations) {
-        if (relation.GetName() == relationName) {
+        if (relation->GetName() == relationName) {
             return relation;
         }
     }

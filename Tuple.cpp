@@ -11,7 +11,13 @@ Tuple::Tuple(std::vector<Parameter> parameters) {
     }
 }
 
-bool Tuple::ContainsValueAtIndex(int index, const std::string &value) {
+Tuple::Tuple(const std::vector<std::string>& parameters) {
+    for (auto &parameter: parameters) {
+        values.push_back(parameter);
+    }
+}
+
+bool Tuple::ContainsValueAtIndex(unsigned index, const std::string &value) {
     if (values.at(index) == value) {
         return true;
     } else {
@@ -51,4 +57,22 @@ std::string Tuple::ToString() {
     }
     tupleString += ")";
     return tupleString;
+}
+
+std::string Tuple::GetValueAtIndex(unsigned int index) {
+    return values.at(index);
+}
+
+Tuple Tuple::NaturalJoin(Header header, Tuple otherTuple, Header otherHeader, Header joinedHeader) {
+    std::vector <std::string> joinedValues;
+    for (const auto& parameter : joinedHeader.GetParameters()) {
+        if (header.DoesContainParameter(parameter)) {
+            unsigned index = header.GetIndexOfParameter(parameter);
+            joinedValues.push_back(this->GetValueAtIndex(index));
+        } else if (otherHeader.DoesContainParameter(parameter)) {
+            unsigned index = otherHeader.GetIndexOfParameter(parameter);
+            joinedValues.push_back(otherTuple.GetValueAtIndex(index));
+        }
+    }
+    return Tuple(joinedValues);
 }

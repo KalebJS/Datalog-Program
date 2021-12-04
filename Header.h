@@ -15,6 +15,7 @@
 class Header {
 private:
     std::vector<std::string> parameters;
+    std::vector<std::string> commonParameters;
 public:
     Header();
 
@@ -34,7 +35,19 @@ public:
 
     std::vector<int> Project(const std::vector<int> &indexList);
 
-    bool IsUniqueParameter(std::vector<std::string> parametersList, std::string id);
+    static bool IsUniqueParameter(const std::vector<std::string>& parametersList, const std::string& id);
+
+    Header NaturalJoin(const Header& otherHeader);
+
+    void AddParameter(const std::string& parameter);
+
+    void AddCommonParameter(const std::string &parameter);
+
+    std::vector<std::string> GetCommonParameters();
+
+    bool DoesContainParameter(const std::string &parameter);
+
+    static std::string ToLowerCase(std::string str);
 };
 
 

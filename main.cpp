@@ -38,7 +38,7 @@ int main(int argc, char **argv) {
     bool wasParsed = parser->Parse(lexer->GetTokens());
     if (!wasParsed) {
         CleanUp(program, database, parser, lexer, interpreter);
-        exit(500);
+        exit(100);
     }
 
     interpreter->Interpret();

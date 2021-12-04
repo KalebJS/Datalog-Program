@@ -19,18 +19,21 @@ private:
     std::set<Tuple> tuples;
     std::string name;
     Header header = Header();
+    std::set<Tuple> newTuples;
 
     void UpdateHeader(const std::string &id, std::string value);
 
     void FilterTuples(int tupleIndex, const std::string &value);
 
-    void FilterTuples(const std::vector<int>& tupleIndex);
+    void FilterTuples(const std::vector<int> &tupleIndex);
 
     void FilterColumns(const std::vector<std::string> &idList);
 
     void FilterColumns(const std::vector<int> &indexList);
 
     Relation(std::string copiedName, Header copiedHeader, std::set<Tuple> copiedTuples);
+
+    explicit Relation(Header header);
 
 public:
     explicit Relation(Predicate scheme);
@@ -41,25 +44,41 @@ public:
 
     std::string GetName() { return name; }
 
-    Header GetHeader() { return header; }
+    Header GetHeader() { return this->header; }
 
     std::set<Tuple> GetTuples() { return tuples; }
 
-    Relation Select(int tupleIndex, const std::string &value);
+    std::set<Tuple> GetNewTuples() { return newTuples; }
 
-    Relation Select(std::vector<int> tupleIndexes);
+    Relation *Select(int tupleIndex, const std::string &value);
 
-    Relation Project(const std::vector<std::string> &idList);
+    Relation *Select(const std::vector<int> &tupleIndexes);
 
-    Relation Project(const std::vector<int> &indexList);
+    Relation *Project(const std::vector<std::string> &idList);
 
-    Relation Rename(const std::string &id, std::string value);
+    Relation *Project(const std::vector<int> &indexList);
+
+    Relation *Rename(const std::string &id, std::string value);
+
+    Relation *Rename(const int &index, const std::string &value);
 
     std::string ToString();
 
-    Relation Rename(const int &index, const std::string& value);
-
     void UpdateHeader(const int &index, const std::string &value);
+
+    static bool TupleIsJoinable(Tuple tuple1, Header header1, Tuple tuple2, Header header2, Header joinedHeader);
+
+    bool AddTuple(const Tuple& tuple);
+
+    Header GetHeader() const;
+
+    std::vector<int> GetRelatedIndices(Predicate headPredicate);
+
+    Relation *NaturalJoin(Relation *other);
+
+    bool Union(Relation *pRelation);
+
+    void ClearNewTuples();
 };
 
 

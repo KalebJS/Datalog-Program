@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <utility>
 #include "Header.h"
 
 Header::Header() = default;
@@ -16,23 +17,28 @@ Header::Header(std::vector<Parameter> parametersList) {
 
 void Header::ChangeParameter(const std::string &id, std::string value) {
     int index = GetIndexOfParameter(id);
-    parameters.at(index) = value;
+    parameters.at(index) = std::move(value);
 }
 
 void Header::ChangeParameter(const int &index, std::string value) {
-    parameters.at(index) = value;
+    parameters.at(index) = std::move(value);
+}
+
+std::string Header::ToLowerCase(std::string str) {
+    std::transform(str.begin(), str.end(), str.begin(), ::tolower);
+    return str;
 }
 
 int Header::GetIndexOfParameter(const std::string &id) {
-    for (long unsigned int i = 0; i < parameters.size(); i++) {
-        if (parameters.at(i) == id) {
+    for (long unsigned i = 0; i < parameters.size(); i++) {
+        if (ToLowerCase(parameters.at(i)) == ToLowerCase(id)) {
             return (int) i;
         }
     }
     return -1;
 }
 
-bool Header::IsUniqueParameter(std::vector<std::string> parametersList, std::string id) {
+bool Header::IsUniqueParameter(const std::vector<std::string>& parametersList, const std::string& id) {
     for (auto &parameter: parametersList) {
         if (parameter == id) {
             return false;
@@ -83,3 +89,38 @@ std::string Header::ToString() {
     return header;
 }
 
+Header Header::NaturalJoin (const Header& otherHeader) {
+    Header joinedHeader = Header();
+    for (auto &parameter: parameters) {
+        joinedHeader.AddParameter(parameter);
+    }
+    for (auto &parameter: otherHeader.parameters) {
+        if (IsUniqueParameter(joinedHeader.GetParameters(), parameter)) {
+            joinedHeader.AddParameter(parameter);
+        } else {
+            joinedHeader.AddCommonParameter(parameter);
+        }
+    }
+    return joinedHeader;
+}
+
+void Header::AddParameter(const std::string& parameter) {
+    parameters.push_back(parameter);
+}
+
+void Header::AddCommonParameter(const std::string& parameter) {
+    this->commonParameters.push_back(parameter);
+}
+
+std::vector<std::string> Header::GetCommonParameters() {
+    return commonParameters;
+}
+
+bool Header::DoesContainParameter(const std::string& parameter) {
+    for (auto &param: parameters) {
+        if (param == parameter) {
+            return true;
+        }
+    }
+    return false;
+}

@@ -26,3 +26,11 @@ void Rule::AddPredicate(Predicate predicate) {
 void Rule::SetHeadPredicate(Predicate predicate) {
     headPredicate = predicate;
 }
+
+Predicate Rule::GetHeadPredicate() {
+    return headPredicate;
+}
+
+std::vector<Predicate> Rule::GetPredicates() {
+    return predicates;
+}

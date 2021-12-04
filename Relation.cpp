@@ -3,9 +3,13 @@
 //
 
 #include <sstream>
+#include <utility>
 #include <iostream>
 #include "Relation.h"
 
+Relation::Relation(Header header) {
+    this->header = std::move(header);
+}
 
 Relation::Relation(Predicate scheme) {
     name = scheme.GetId();
@@ -13,9 +17,9 @@ Relation::Relation(Predicate scheme) {
 }
 
 Relation::Relation(std::string copiedName, Header copiedHeader, std::set<Tuple> copiedTuples) {
-    name = copiedName;
-    header = copiedHeader;
-    tuples = copiedTuples;
+    name = std::move(copiedName);
+    header = std::move(copiedHeader);
+    tuples = std::move(copiedTuples);
 }
 
 Relation::~Relation() = default;
@@ -24,45 +28,65 @@ void Relation::AddTuple(Predicate fact) {
     tuples.insert(Tuple(fact.GetParameters()));
 }
 
-Relation Relation::Select(int tupleIndex, const std::string &value) {
-    Relation selectedRelation = Relation(name, header, tuples);
-    selectedRelation.FilterTuples(tupleIndex, value);
+void Relation::ClearNewTuples() {
+    newTuples.clear();
+}
+
+bool Relation::AddTuple(const Tuple& tuple) {
+    if (tuples.insert(Tuple(tuple)).second) {
+        newTuples.insert(tuple);
+        return true;
+    }
+    return false;
+}
+
+Relation *Relation::Select(int tupleIndex, const std::string &value) {
+    auto *selectedRelation = new Relation(name, header, tuples);
+    selectedRelation->FilterTuples(tupleIndex, value);
     return selectedRelation;
 }
 
-Relation Relation::Select(std::vector<int> tupleIndexes) {
-    Relation selectedRelation = Relation(name, header, tuples);
-    selectedRelation.FilterTuples(tupleIndexes);
+Relation *Relation::Select(const std::vector<int> &tupleIndexes) {
+    auto *selectedRelation = new Relation(name, header, tuples);
+    selectedRelation->FilterTuples(tupleIndexes);
     return selectedRelation;
 }
 
-Relation Relation::Project(const std::vector<std::string> &idList) {
-    Relation projectedRelation = Relation(name, header, tuples);
-    projectedRelation.FilterColumns(idList);
+Relation *Relation::Project(const std::vector<std::string> &idList) {
+    auto *projectedRelation = new Relation(name, header, tuples);
+    projectedRelation->FilterColumns(idList);
     return projectedRelation;
 }
 
 
-Relation Relation::Project(const std::vector<int> &indexList) {
-    Relation projectedRelation = Relation(name, header, tuples);
-    projectedRelation.FilterColumns(indexList);
+Relation *Relation::Project(const std::vector<int> &indexList) {
+    auto *projectedRelation = new Relation(name, header, tuples);
+    projectedRelation->FilterColumns(indexList);
     return projectedRelation;
 }
 
-Relation Relation::Rename(const std::string &id, std::string value) {
-    Relation renamedRelation = Relation(name, header, tuples);
-    renamedRelation.UpdateHeader(id, value);
+std::vector<int> Relation::GetRelatedIndices(Predicate headPredicate) {
+    std::vector<int> indexList;
+    for (const auto &parameter: Header(headPredicate.GetParameters()).GetParameters()) {
+        indexList.push_back(header.GetIndexOfParameter(parameter));
+    }
+    return indexList;
+}
+
+Relation *Relation::Rename(const std::string &id, std::string value) {
+    auto *renamedRelation = new Relation(name, header, tuples);
+    renamedRelation->UpdateHeader(id, std::move(value));
     return renamedRelation;
 }
 
-Relation Relation::Rename(const int &index, const std::string &value) {
-    Relation renamedRelation = Relation(name, header, tuples);
-    renamedRelation.UpdateHeader(index, value);
+Relation *Relation::Rename(const int &index, const std::string &value) {
+    auto *renamedRelation = new Relation(name, header, tuples);
+    renamedRelation->UpdateHeader(index, value);
     return renamedRelation;
 }
 
 void Relation::UpdateHeader(const std::string &id, std::string value) {
-    header.ChangeParameter(id, value);
+    header.ChangeParameter(id, std::move(value));
 }
 
 void Relation::UpdateHeader(const int &index, const std::string &value) {
@@ -127,4 +151,41 @@ std::string Relation::ToString() {
     return ss.str();
 }
 
+bool Relation::TupleIsJoinable(Tuple tuple1, Header header1, Tuple tuple2, Header header2, Header joinedHeader) {
+    for (const auto &parameter: joinedHeader.GetCommonParameters()) {
+        unsigned tuple1_idx = header1.GetIndexOfParameter(parameter);
+        unsigned tuple2_idx = header2.GetIndexOfParameter(parameter);
+        if (tuple1.GetValueAtIndex(tuple1_idx) != tuple2.GetValueAtIndex(tuple2_idx)) {
+            return false;
+        }
+    }
+    return true;
+}
 
+Relation *Relation::NaturalJoin(Relation *other) {
+    Header joinedHeader = header.NaturalJoin(other->GetHeader());
+    auto *joinedRelation = new Relation(joinedHeader);
+    for (auto tuple: tuples) {
+        for (const Tuple &otherTuple: other->GetTuples()) {
+            if (this->TupleIsJoinable(tuple, this->header, otherTuple, other->GetHeader(), joinedHeader)) {
+                Tuple joinedTuple = tuple.NaturalJoin(this->header, otherTuple, other->GetHeader(), joinedHeader);
+                joinedRelation->AddTuple(joinedTuple);
+            }
+        }
+    }
+    return joinedRelation;
+}
+
+Header Relation::GetHeader() const {
+    return header;
+}
+
+bool Relation::Union(Relation *pRelation) {
+    bool hasNewTuples = false;
+    for (const auto &tuple: pRelation->GetTuples()) {
+        if (this->AddTuple(tuple)) {
+            hasNewTuples = true;
+        }
+    }
+    return hasNewTuples;
+}

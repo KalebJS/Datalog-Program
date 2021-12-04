@@ -24,6 +24,10 @@ public:
     void AddPredicate(Predicate predicate);
 
     void SetHeadPredicate(Predicate predicate);
+
+    Predicate GetHeadPredicate();
+
+    std::vector<Predicate> GetPredicates();
 };
 
 #endif //RULE_H
