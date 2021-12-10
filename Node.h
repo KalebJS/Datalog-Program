@@ -35,6 +35,14 @@ public:
     bool GetVisited() const;
 
     bool HasPredicateID(Node *node);
+
+    bool operator<(const Node &rhs) const;
+
+    bool operator>(const Node &rhs) const;
+
+    bool operator<=(const Node &rhs) const;
+
+    bool operator>=(const Node &rhs) const;
 };
 
 

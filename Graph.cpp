@@ -34,10 +34,10 @@ void Graph::BreadthFirstSearch(Node *node) {
             BreadthFirstSearch(edge);
         }
     }
-    postOrder.push(node);
+    postOrder.push(node->GetNodeID());
 }
 
-std::stack<Node *> Graph::BreadthFirstSearch() {
+std::stack<unsigned> Graph::BreadthFirstSearch() {
     Node *firstNode = nodes[0];
     BreadthFirstSearch(firstNode);
     return postOrder;
@@ -104,8 +104,16 @@ void Graph::PrintGraph() {
 void Graph::PrintPostOrder() {
     std::cout << std::endl << "Breadth first search:" << std::endl;
     while (!postOrder.empty()) {
-        Node* node = postOrder.top();
+        unsigned node = postOrder.top();
         postOrder.pop();
-        std::cout << node->GetNodeID() << " ";
+        std::cout << node << " ";
     }
+}
+
+std::vector<StronglyConnectedComponent> Graph::BreadthFirstSearchForest(const std::stack<unsigned> &postOrderStack) {
+//    for (auto  : postOrderStack) {
+
+    std::vector<StronglyConnectedComponent> sccs;
+
+    return sccs;
 }

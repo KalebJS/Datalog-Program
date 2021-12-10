@@ -9,13 +9,14 @@
 #include <stack>
 #include "DatalogProgram.h"
 #include "Node.h"
+#include "StronglyConnectedComponent.h"
 
 class Graph {
 private:
     DatalogProgram *datalogProgram;
     std::vector<Rule> rules;
     std::vector<Node *> nodes;
-    std::stack<Node *> postOrder;
+    std::stack<unsigned> postOrder;
 
     void BreadthFirstSearch(Node *node);
 
@@ -28,7 +29,7 @@ public:
 
     void ConstructGraph();
 
-    std::stack<Node *> BreadthFirstSearch();
+    std::stack<unsigned> BreadthFirstSearch();
 
     Graph Reverse();
 
@@ -39,6 +40,8 @@ public:
     void PrintGraph();
 
     void PrintPostOrder();
+
+    std::vector<StronglyConnectedComponent> BreadthFirstSearchForest(const std::stack<unsigned>& postOrderStack);
 };
 
 

@@ -21,6 +21,23 @@ bool Node::HasPredicateID(Node *node) {
 
 void Node::AddEdge(Node *node) {
     edges.push_back(node);
+    std::sort(edges.begin(), edges.end());
+}
+
+bool Node::operator<(const Node &rhs) const {
+    return id < rhs.id;
+}
+
+bool Node::operator>(const Node &rhs) const {
+    return rhs < *this;
+}
+
+bool Node::operator<=(const Node &rhs) const {
+    return !(rhs < *this);
+}
+
+bool Node::operator>=(const Node &rhs) const {
+    return !(*this < rhs);
 }
 
 unsigned Node::GetNodeID() const {
