@@ -3,7 +3,6 @@
 //
 
 #include "Interpreter.h"
-#include "Graph.h"
 
 Interpreter::Interpreter(DatalogProgram *datalogProgramPointer, Database *databasePointer) {
     datalogProgram = datalogProgramPointer;
@@ -15,7 +14,6 @@ void Interpreter::Interpret() {
     InterpretSchemes();
     InterpretFacts();
     FindStronglyConnectedComponents();
-    exit(0);
     std::cout << "Rule Evaluation" << std::endl;
     InterpretRules();
     std::cout << "Query Evaluation" << std::endl;
@@ -172,15 +170,17 @@ void Interpreter::FindStronglyConnectedComponents() {
     graph.PrintGraph();
 
     Graph reverseGraph = graph.Reverse();
-
-    std::cout << std::endl << "Graph reversed:" << std::endl;
-
-    reverseGraph.PrintGraph();
+//    std::cout << std::endl << "Graph reversed:" << std::endl;
+//    reverseGraph.PrintGraph();
 
     std::stack<unsigned> stack = reverseGraph.BreadthFirstSearch();
 
-    reverseGraph.PrintPostOrder();
+//    reverseGraph.PrintPostOrder();
 
+//    std::cout << std::endl << "Strongly connected components:" << std::endl;
+//    graph.PrintSCCs(graph.BreadthFirstSearchForest(stack));
 
-
+    for (auto &scc: graph.BreadthFirstSearchForest(stack)) {
+        sccs.push_back(scc);
+    }
 }

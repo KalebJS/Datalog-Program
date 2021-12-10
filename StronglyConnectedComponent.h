@@ -6,8 +6,22 @@
 #define DATALOG_STRONGLYCONNECTEDCOMPONENT_H
 
 
-class StronglyConnectedComponent {
+#include <vector>
+#include "Rule.h"
+#include "Node.h"
 
+class StronglyConnectedComponent {
+private:
+    std::vector<Rule> rules;
+    std::vector<Node*> nodes;
+public:
+    StronglyConnectedComponent() = default;
+
+    std::vector<Rule> GetRules();
+
+    void AddComponent(Node *node);
+
+    std::string ToString();
 };
 
 

@@ -17,6 +17,7 @@ private:
     std::vector<Rule> rules;
     std::vector<Node *> nodes;
     std::stack<unsigned> postOrder;
+    std::deque<Node *> nodesInOrder;
 
     void BreadthFirstSearch(Node *node);
 
@@ -41,7 +42,15 @@ public:
 
     void PrintPostOrder();
 
-    std::vector<StronglyConnectedComponent> BreadthFirstSearchForest(const std::stack<unsigned>& postOrderStack);
+    std::vector<StronglyConnectedComponent> BreadthFirstSearchForest(std::stack<unsigned> postOrderStack);
+
+    void BreadthFirstSearchTree(StronglyConnectedComponent &scc, Node *node);
+
+    bool HasNode(Node *node);
+
+    void RemoveNodeFromOrder(Node *node);
+
+    void PrintSCCs(const std::vector<StronglyConnectedComponent>& sccs);
 };
 
 

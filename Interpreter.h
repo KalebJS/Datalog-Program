@@ -7,13 +7,15 @@
 
 
 #include "DatalogProgram.h"
+#include "StronglyConnectedComponent.h"
+#include "Graph.h"
 
 class Interpreter {
 private:
     DatalogProgram *datalogProgram;
     Database *database;
     unsigned ruleEvaluations = 1;
-
+    std::vector<StronglyConnectedComponent> sccs;
 public:
     Interpreter(DatalogProgram *datalogProgramPointer, Database *databasePointer);
 
