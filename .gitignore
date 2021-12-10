@@ -5,3 +5,4 @@ makefile
 .idea/
 cmake-build-debug-system/
 Lab*
+*.zip

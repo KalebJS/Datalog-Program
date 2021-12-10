@@ -77,15 +77,9 @@ bool Node::GetVisited() const {
     return isVisited;
 }
 
-bool Node::HasCircularDependency(Node* originalNode) {
-    if (originalNode == nullptr) {
-        originalNode = this;
-    }
-    for (auto edge: edges) {
-        if (edge == originalNode) {
-            return true;
-        }
-        if (edge->HasCircularDependency(originalNode)) {
+bool Node::IsSelfDependent() {
+    for (auto edge : edges) {
+        if (edge == this) {
             return true;
         }
     }

@@ -19,7 +19,7 @@ void StronglyConnectedComponent::AddComponent(Node *node) {
 
     std::sort(nodeIDs.begin(), nodeIDs.end());
 
-    if (isTrivial && node->HasCircularDependency(nullptr)) {
+    if (isTrivial && (nodeIDs.size() > 1 || node->IsSelfDependent())) {
         isTrivial = false;
     }
 }

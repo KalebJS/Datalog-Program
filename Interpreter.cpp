@@ -131,7 +131,8 @@ void Interpreter::InterpretRules() {
 void Interpreter::InterpretStronglyConnectedComponents(StronglyConnectedComponent scc) {
     bool insertedTuples = false;
     std::vector<Relation *> results;
-    for (auto rule: scc.GetRules()) {
+    for (const auto& mapping: scc.GetRuleMap()) {
+        Rule rule = mapping.second;
         std::vector<Relation> intermediateResults;
         for (auto predicate: rule.GetPredicates()) {
             Relation intermediateResult = database->GetDereferencedRelation(predicate.GetId());
@@ -188,7 +189,7 @@ void Interpreter::FindStronglyConnectedComponents() {
     std::stack<unsigned> stack = reverseGraph.BreadthFirstSearch();
 
 //    reverseGraph.PrintPostOrder();
-
+//
 //    std::cout << std::endl << "Strongly connected components:" << std::endl;
 //    graph.PrintSCCs(graph.BreadthFirstSearchForest(stack));
 

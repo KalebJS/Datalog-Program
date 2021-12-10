@@ -44,7 +44,7 @@ public:
 
     bool operator>=(const Node &rhs) const;
 
-    bool HasCircularDependency(Node *originalNode);
+    bool IsSelfDependent();
 };
 
 
