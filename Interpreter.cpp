@@ -177,4 +177,10 @@ void Interpreter::FindStronglyConnectedComponents() {
 
     reverseGraph.PrintGraph();
 
+    std::stack<Node*> stack = reverseGraph.BreadthFirstSearch();
+
+    reverseGraph.PrintPostOrder();
+
+
+
 }

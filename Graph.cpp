@@ -100,3 +100,12 @@ void Graph::PrintGraph() {
         std::cout << node->ToString() << std::endl;
     }
 }
+
+void Graph::PrintPostOrder() {
+    std::cout << std::endl << "Breadth first search:" << std::endl;
+    while (!postOrder.empty()) {
+        Node* node = postOrder.top();
+        postOrder.pop();
+        std::cout << node->GetNodeID() << " ";
+    }
+}

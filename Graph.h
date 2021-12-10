@@ -37,6 +37,8 @@ public:
     bool HasUnvisitedNodes();
 
     void PrintGraph();
+
+    void PrintPostOrder();
 };
 
 
