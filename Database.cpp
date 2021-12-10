@@ -43,7 +43,15 @@ std::string Database::ToString() {
     return ss.str();
 }
 
-Relation *Database::FindRelation(const std::string &relationName) {
+Relation Database::GetDereferencedRelation(const std::string &relationName) {
+    for (auto &relation: relations) {
+        if (relation->GetName() == relationName) {
+            return *relation;
+        }
+    }
+    throw ("Relation not found");
+}
+Relation* Database::GetRelation(const std::string &relationName) {
     for (auto &relation: relations) {
         if (relation->GetName() == relationName) {
             return relation;

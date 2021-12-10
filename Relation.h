@@ -50,17 +50,17 @@ public:
 
     std::set<Tuple> GetNewTuples() { return newTuples; }
 
-    Relation *Select(int tupleIndex, const std::string &value);
+    Relation Select(int tupleIndex, const std::string &value);
 
-    Relation *Select(const std::vector<int> &tupleIndexes);
+    Relation Select(const std::vector<int> &tupleIndexes);
 
-    Relation *Project(const std::vector<std::string> &idList);
+    Relation Project(const std::vector<std::string> &idList);
 
-    Relation *Project(const std::vector<int> &indexList);
+    Relation Project(const std::vector<int> &indexList);
 
-    Relation *Rename(const std::string &id, std::string value);
+    Relation Rename(const std::string &id, std::string value);
 
-    Relation *Rename(const int &index, const std::string &value);
+    Relation Rename(const int &index, const std::string &value);
 
     std::string ToString();
 
@@ -74,9 +74,9 @@ public:
 
     std::vector<int> GetRelatedIndices(Predicate headPredicate);
 
-    Relation *NaturalJoin(Relation *other);
+    Relation NaturalJoin(Relation other);
 
-    bool Union(Relation *pRelation);
+    bool Union(Relation pRelation);
 
     void ClearNewTuples();
 };

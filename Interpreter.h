@@ -33,7 +33,7 @@ public:
 
     static std::vector<int> FindMatchingIds(std::vector<Parameter> parameters, const std::string &id);
 
-    static void PrintQueryResult(Predicate query, Relation *queryResult);
+    static void PrintQueryResult(Predicate query, Relation queryResult);
 
     static void PrintRuleResult(Rule rule, Relation *queryResult);
 

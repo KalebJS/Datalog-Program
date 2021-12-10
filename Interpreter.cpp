@@ -40,19 +40,19 @@ void Interpreter::InterpretFacts() {
 
 void Interpreter::InterpretQueries() {
     for (auto query: datalogProgram->getQueries()) {
-        Relation *queryResult = database->FindRelation(query.GetId());
+        Relation queryResult = database->GetDereferencedRelation(query.GetId());
         std::vector<Parameter> queryParameters = query.GetParameters();
         std::vector<int> variableIndices;
         for (long unsigned int i = 0; i < queryParameters.size(); i++) {
             if (queryParameters.at(i).GetType() == ParameterType::STRING) {
-                queryResult = queryResult->Select((int) i, queryParameters.at(i).GetValue());
+                queryResult = queryResult.Select((int) i, queryParameters.at(i).GetValue());
             } else if (queryParameters.at(i).GetType() == ParameterType::ID) {
-                queryResult = queryResult->Select(FindMatchingIds(queryParameters, queryParameters.at(i).GetValue()));
+                queryResult = queryResult.Select(FindMatchingIds(queryParameters, queryParameters.at(i).GetValue()));
                 variableIndices.push_back((int) i);
-                queryResult = queryResult->Rename((int) i, queryParameters.at(i).GetValue());
+                queryResult = queryResult.Rename((int) i, queryParameters.at(i).GetValue());
             }
         }
-        queryResult = queryResult->Project(variableIndices);
+        queryResult = queryResult.Project(variableIndices);
         PrintQueryResult(query, queryResult);
     }
 }
@@ -69,22 +69,22 @@ std::vector<int> Interpreter::FindMatchingIds(std::vector<Parameter> parameters,
     return matchingIndexes;
 }
 
-void Interpreter::PrintQueryResult(Predicate query, Relation *queryResult) {
+void Interpreter::PrintQueryResult(Predicate query, Relation queryResult) {
     std::cout << query.toString() << "?";
-    int numTuples = queryResult->GetTuples().size();
+    int numTuples = queryResult.GetTuples().size();
     if (numTuples > 0) {
         std::cout << " Yes(" << numTuples << ")" << std::endl;
     } else {
         std::cout << " No" << std::endl;
     }
-    for (auto tuple: queryResult->GetTuples()) {
+    for (auto tuple: queryResult.GetTuples()) {
 
         if (!tuple.GetValues().empty()) {
             std::cout << "  ";
-            for (long unsigned int j = 0; j < queryResult->GetHeader().GetParameters().size(); j++) {
-                std::cout << queryResult->GetHeader().GetParameters().at(j) << "="
+            for (long unsigned int j = 0; j < queryResult.GetHeader().GetParameters().size(); j++) {
+                std::cout << queryResult.GetHeader().GetParameters().at(j) << "="
                           << tuple.GetValues().at(j);
-                if (j < queryResult->GetHeader().GetParameters().size() - 1) {
+                if (j < queryResult.GetHeader().GetParameters().size() - 1) {
                     std::cout << ", ";
                 }
             }
@@ -132,36 +132,36 @@ void Interpreter::InterpretStronglyConnectedComponents(StronglyConnectedComponen
     bool insertedTuples = false;
     std::vector<Relation *> results;
     for (auto rule: scc.GetRules()) {
-        std::vector<Relation *> intermediateResults;
+        std::vector<Relation> intermediateResults;
         for (auto predicate: rule.GetPredicates()) {
-            Relation *intermediateResult = database->FindRelation(predicate.GetId());
+            Relation intermediateResult = database->GetDereferencedRelation(predicate.GetId());
             std::vector<Parameter> intermediateResultParameters = predicate.GetParameters();
             std::vector<int> variableIndices;
             for (long unsigned int i = 0; i < intermediateResultParameters.size(); i++) {
                 if (intermediateResultParameters.at(i).GetType() == ParameterType::STRING) {
 
-                    intermediateResult = intermediateResult->Select((int) i,
+                    intermediateResult = intermediateResult.Select((int) i,
                                                                     intermediateResultParameters.at(i).GetValue());
                 } else if (intermediateResultParameters.at(i).GetType() == ParameterType::ID) {
-                    intermediateResult = intermediateResult->Select(FindMatchingIds(intermediateResultParameters,
+                    intermediateResult = intermediateResult.Select(FindMatchingIds(intermediateResultParameters,
                                                                                     intermediateResultParameters.at(
                                                                                             i).GetValue()));
                     variableIndices.push_back((int) i);
-                    intermediateResult = intermediateResult->Rename((int) i,
+                    intermediateResult = intermediateResult.Rename((int) i,
                                                                     intermediateResultParameters.at(i).GetValue());
                 }
             }
-            intermediateResults.push_back(intermediateResult->Project(variableIndices));
+            intermediateResults.push_back(intermediateResult.Project(variableIndices));
         }
-        Relation *joinedResult = intermediateResults.at(0);
+        Relation joinedResult = intermediateResults.at(0);
         intermediateResults.erase(intermediateResults.begin());
         for (const auto &intermediateResult: intermediateResults) {
-            joinedResult = joinedResult->NaturalJoin(intermediateResult);
+            joinedResult = joinedResult.NaturalJoin(intermediateResult);
         }
-        Relation *result = database->FindRelation(rule.GetHeadPredicate().GetId());
+        Relation *result = database->GetRelation(rule.GetHeadPredicate().GetId());
         result->ClearNewTuples();
-        std::vector<int> relatedIndices = joinedResult->GetRelatedIndices(rule.GetHeadPredicate());
-        joinedResult = joinedResult->Project(relatedIndices);
+        std::vector<int> relatedIndices = joinedResult.GetRelatedIndices(rule.GetHeadPredicate());
+        joinedResult = joinedResult.Project(relatedIndices);
         if (result->Union(joinedResult)) {
             insertedTuples = true;
         }

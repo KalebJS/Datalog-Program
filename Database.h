@@ -21,7 +21,9 @@ public:
 
     void AddRelationParameters(Predicate fact);
 
-    Relation *FindRelation(const std::string &relationName);
+    Relation GetDereferencedRelation(const std::string &relationName);
+
+    Relation* GetRelation(const std::string &relationName);
 
     std::string ToString();
 
