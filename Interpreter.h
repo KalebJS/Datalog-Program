@@ -36,6 +36,8 @@ public:
     static void PrintQueryResult(Predicate query, Relation *queryResult);
 
     static void PrintRuleResult(Rule rule, Relation *queryResult);
+
+    void InterpretStronglyConnectedComponents(StronglyConnectedComponent scc);
 };
 
 

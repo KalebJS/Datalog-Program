@@ -7,6 +7,7 @@
 
 
 #include <vector>
+#include <map>
 #include "Rule.h"
 #include "Node.h"
 
@@ -14,6 +15,8 @@ class StronglyConnectedComponent {
 private:
     std::vector<Rule> rules;
     std::vector<Node*> nodes;
+    std::map<unsigned, Rule> ruleMap;
+    bool isTrivial = true;
 public:
     StronglyConnectedComponent() = default;
 
@@ -22,6 +25,10 @@ public:
     void AddComponent(Node *node);
 
     std::string ToString();
+
+    std::map<unsigned int, Rule> GetRuleMap();
+
+    bool IsTrivial();
 };
 
 

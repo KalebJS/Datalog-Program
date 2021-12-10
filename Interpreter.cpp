@@ -102,7 +102,7 @@ void Interpreter::PrintRuleResult(Rule rule, Relation *queryResult) {
         }
     }
     std::cout << "." << std::endl;
-    for (auto tuple: queryResult->GetNewTuples()) {
+    for (auto tuple: queryResult->GetTuples()) {
         if (!tuple.GetValues().empty()) {
             std::cout << "  ";
             for (long unsigned int j = 0; j < queryResult->GetHeader().GetParameters().size(); j++) {
@@ -118,9 +118,17 @@ void Interpreter::PrintRuleResult(Rule rule, Relation *queryResult) {
 }
 
 void Interpreter::InterpretRules() {
+    for (const auto& scc : sccs) {
+        ruleEvaluations = 1;
+        InterpretStronglyConnectedComponents(scc);
+    }
+    std::cout << std::endl;
+}
+
+void Interpreter::InterpretStronglyConnectedComponents(StronglyConnectedComponent scc) {
     bool insertedTuples = false;
     std::vector<Relation *> results;
-    for (auto rule: datalogProgram->getRules()) {
+    for (auto rule: scc.GetRules()) {
         std::vector<Relation *> intermediateResults;
         for (auto predicate: rule.GetPredicates()) {
             Relation *intermediateResult = database->FindRelation(predicate.GetId());
@@ -153,21 +161,25 @@ void Interpreter::InterpretRules() {
         if (result->Union(joinedResult)) {
             insertedTuples = true;
         }
-        PrintRuleResult(rule, result);
     }
-    if (insertedTuples) {
+    if (insertedTuples && !scc.IsTrivial()) {
         this->ruleEvaluations++;
-        return this->InterpretRules();
+        return this->InterpretStronglyConnectedComponents(scc);
     }
-    std::cout << std::endl << "Schemes populated after " << this->ruleEvaluations << " passes through the Rules." <<
-              std::endl << std::endl;
+    for (auto pair: scc.GetRuleMap()) {
+        std::cout << "SCC: R" << pair.first << std::endl;
+        PrintRuleResult(pair.second, database->FindRelation(pair.second.GetHeadPredicate().GetId()));
+        std::cout << ruleEvaluations << " passes: R" << pair.first << std::endl;
+    }
 }
 
 void Interpreter::FindStronglyConnectedComponents() {
     Graph graph = Graph(this->datalogProgram);
     graph.ConstructGraph();
 
+    std::cout << "Dependency Graph" << std::endl;
     graph.PrintGraph();
+    std::cout << std::endl;
 
     Graph reverseGraph = graph.Reverse();
 //    std::cout << std::endl << "Graph reversed:" << std::endl;
