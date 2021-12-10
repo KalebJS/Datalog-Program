@@ -169,9 +169,12 @@ void Interpreter::FindStronglyConnectedComponents() {
     Graph graph = Graph(this->datalogProgram);
     graph.ConstructGraph();
 
+    graph.PrintGraph();
 
+    Graph reverseGraph = graph.Reverse();
 
-//    Graph reverseGraph = graph.Reverse();
+    std::cout << std::endl << "Graph reversed:" << std::endl;
 
+    reverseGraph.PrintGraph();
 
 }

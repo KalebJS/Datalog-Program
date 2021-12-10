@@ -13,18 +13,28 @@ class Node {
 private:
     Rule rule;
     unsigned id;
-    std::vector<Node*> edges;
+    std::vector<Node *> edges;
+    bool isVisited = false;
 public:
-    Node(const Rule& rule, unsigned id);
+    Node(const Rule &rule, unsigned id);
 
-
-    bool AddEdge(Node *node);
+    void AddEdge(Node *node);
 
     std::string GetRuleID();
 
     std::string ToString() const;
 
     unsigned int GetNodeID() const;
+
+    std::vector<Node *> GetEdges() const;
+
+    Rule GetRule() const;
+
+    void MarkAsVisited();
+
+    bool GetVisited() const;
+
+    bool HasPredicateID(Node *node);
 };
 
 
