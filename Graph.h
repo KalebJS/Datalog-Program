@@ -50,7 +50,7 @@ public:
 
     void RemoveNodeFromOrder(Node *node);
 
-    void PrintSCCs(const std::vector<StronglyConnectedComponent>& sccs);
+    static void PrintSCCs(const std::vector<StronglyConnectedComponent>& sccs);
 };
 
 

@@ -7,7 +7,11 @@
 
 Database::Database() = default;
 
-Database::~Database() = default;
+Database::~Database() {
+    for (auto relation : relations) {
+        delete relation;
+    }
+}
 
 void Database::AddRelation(const Predicate &scheme) {
     relations.emplace_back(new Relation(scheme));

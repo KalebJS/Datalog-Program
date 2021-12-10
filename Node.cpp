@@ -3,6 +3,7 @@
 //
 
 #include <sstream>
+#include <algorithm>
 #include "Node.h"
 
 Node::Node(const Rule &rule, unsigned int id) {
@@ -74,4 +75,19 @@ void Node::MarkAsVisited() {
 
 bool Node::GetVisited() const {
     return isVisited;
+}
+
+bool Node::HasCircularDependency(Node* originalNode) {
+    if (originalNode == nullptr) {
+        originalNode = this;
+    }
+    for (auto edge: edges) {
+        if (edge == originalNode) {
+            return true;
+        }
+        if (edge->HasCircularDependency(originalNode)) {
+            return true;
+        }
+    }
+    return false;
 }

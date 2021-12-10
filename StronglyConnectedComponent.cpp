@@ -5,6 +5,7 @@
 #include <sstream>
 #include "StronglyConnectedComponent.h"
 #include "Node.h"
+#include <algorithm>
 
 
 std::vector<Rule> StronglyConnectedComponent::GetRules() {
@@ -13,28 +14,31 @@ std::vector<Rule> StronglyConnectedComponent::GetRules() {
 
 void StronglyConnectedComponent::AddComponent(Node *node) {
     rules.push_back(node->GetRule());
-    nodes.push_back(node);
+    nodeIDs.push_back(node->GetNodeID());
     ruleMap.insert(std::pair<unsigned, Rule>(node->GetNodeID(), node->GetRule()));
 
-    if (isTrivial && !node->GetEdges().empty()) {
+    std::sort(nodeIDs.begin(), nodeIDs.end());
+
+    if (isTrivial && node->HasCircularDependency(nullptr)) {
         isTrivial = false;
     }
-
-}
-
-std::string StronglyConnectedComponent::ToString() {
-    std::stringstream ss;
-    for (auto node: nodes) {
-        ss << "R" << node->GetNodeID() << " -> ";
-    }
-
-    return ss.str();
 }
 
 std::map<unsigned, Rule> StronglyConnectedComponent::GetRuleMap() {
     return ruleMap;
 }
 
-bool StronglyConnectedComponent::IsTrivial() {
+bool StronglyConnectedComponent::IsTrivial() const {
     return isTrivial;
+}
+
+std::string StronglyConnectedComponent::ToString() {
+    std::stringstream ss;
+    for (auto nodeID : nodeIDs) {
+        ss << 'R' << nodeID;
+        if (nodeID != nodeIDs.back()) {
+            ss << ",";
+        }
+    }
+    return ss.str();
 }

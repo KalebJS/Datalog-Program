@@ -14,7 +14,7 @@
 class StronglyConnectedComponent {
 private:
     std::vector<Rule> rules;
-    std::vector<Node*> nodes;
+    std::vector<unsigned> nodeIDs;
     std::map<unsigned, Rule> ruleMap;
     bool isTrivial = true;
 public:
@@ -28,7 +28,7 @@ public:
 
     std::map<unsigned int, Rule> GetRuleMap();
 
-    bool IsTrivial();
+    bool IsTrivial() const;
 };
 
 

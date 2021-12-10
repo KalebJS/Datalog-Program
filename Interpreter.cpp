@@ -102,7 +102,7 @@ void Interpreter::PrintRuleResult(Rule rule, Relation *queryResult) {
         }
     }
     std::cout << "." << std::endl;
-    for (auto tuple: queryResult->GetTuples()) {
+    for (auto tuple: queryResult->GetNewTuples()) {
         if (!tuple.GetValues().empty()) {
             std::cout << "  ";
             for (long unsigned int j = 0; j < queryResult->GetHeader().GetParameters().size(); j++) {
@@ -118,9 +118,12 @@ void Interpreter::PrintRuleResult(Rule rule, Relation *queryResult) {
 }
 
 void Interpreter::InterpretRules() {
-    for (const auto& scc : sccs) {
+    for (auto scc : sccs) {
         ruleEvaluations = 1;
+        std::map<unsigned, Rule> pair = scc.GetRuleMap();
+        std::cout << "SCC: " << scc.ToString() << std::endl;
         InterpretStronglyConnectedComponents(scc);
+        std::cout << ruleEvaluations << " passes: " << scc.ToString() << std::endl;
     }
     std::cout << std::endl;
 }
@@ -136,6 +139,7 @@ void Interpreter::InterpretStronglyConnectedComponents(StronglyConnectedComponen
             std::vector<int> variableIndices;
             for (long unsigned int i = 0; i < intermediateResultParameters.size(); i++) {
                 if (intermediateResultParameters.at(i).GetType() == ParameterType::STRING) {
+
                     intermediateResult = intermediateResult->Select((int) i,
                                                                     intermediateResultParameters.at(i).GetValue());
                 } else if (intermediateResultParameters.at(i).GetType() == ParameterType::ID) {
@@ -161,15 +165,11 @@ void Interpreter::InterpretStronglyConnectedComponents(StronglyConnectedComponen
         if (result->Union(joinedResult)) {
             insertedTuples = true;
         }
+        PrintRuleResult(rule, result);
     }
     if (insertedTuples && !scc.IsTrivial()) {
         this->ruleEvaluations++;
         return this->InterpretStronglyConnectedComponents(scc);
-    }
-    for (auto pair: scc.GetRuleMap()) {
-        std::cout << "SCC: R" << pair.first << std::endl;
-        PrintRuleResult(pair.second, database->FindRelation(pair.second.GetHeadPredicate().GetId()));
-        std::cout << ruleEvaluations << " passes: R" << pair.first << std::endl;
     }
 }
 

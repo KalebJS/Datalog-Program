@@ -93,8 +93,9 @@ bool Graph::HasUnvisitedNodes() {
 }
 
 Graph::~Graph() {
-    for (auto node: nodes) {
-        delete node;
+    while (!nodes.empty()) {
+        delete nodes.back();
+        nodes.pop_back();
     }
 }
 
