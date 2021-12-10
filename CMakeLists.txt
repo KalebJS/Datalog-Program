@@ -64,4 +64,10 @@ add_executable(Project_1
         Tuple.h
         Database.cpp
         Database.h
+        Graph.cpp
+        Graph.h
+        StronglyConnectedComponent.cpp
+        StronglyConnectedComponent.h
+        Node.cpp
+        Node.h
         )

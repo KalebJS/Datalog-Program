@@ -1,46 +1,18 @@
-#Some Queries are commented out, feel free to uncomment them for you own testing.
 Schemes:
-
-s0(v,w,x,y,z)
-s1(a,b,c,d,e)
-s2(a,b,c,d,e)
-
-s3(a,b,c,d,e,f,g,i)
-
-s4(a,b,c,d,e)
-
-s5(a,b,c,d,e)
-
-
-
+Parent(p,c)
+Sibling(a,b)
+Ancestor(x,y)
 
 Facts:
-
-s0('a','b','c','d','e').
-s2('f','g','h','i','j').
+Parent('bob','ned').
+Parent('jim','bob').
+Sibling('sue','ned').
 
 Rules:
-
-s1(a,b,c,d,e) :- s0(a,b,c,d,e).
-
-s1(a,b,c,d,e) :- s2(b,c,d,e,a).
-s2(a,b,c,d,e) :- s1(b,c,d,e,a).
-s1(a,b,c,d,e) :- s1(b,a,c,d,e).
-
-s3(a,f,b,g,c,h,d,i) :- s1(a,b,c,d,e),s2(f,g,h,i,j).
-
-s5(a,b,c,d,e) :- s0(a,b,c,d,e).
-
-s4(a,b,c,d,e) :- s3(a,b,z,y,c,d,e,i),s5(m,n,x,y,z).
-s5(a,a,c,d,e) :- s4(a,b,c,d,e),s5(a,w,x,y,z).
-s5(a,b,c,d,e) :- s5(e,a,b,c,d).
-
+Sibling(x,y):-Sibling(y,x).
+Ancestor(x,y):-Ancestor(x,z),Parent(z,y).
+Ancestor(x,y):-Parent(x,y).
 
 Queries:
-
-#scc1o1(a,b,c,d,e)?
-#scc2o1(a,b,c,d,e)?
-#scc1o2(a,b,c,d,e,f,g,h,i,j)?
-#scc1o3(a,b,c,d,e,f)?
-#s3(a,b,c,d,e,,g)?
-s5(a,b,c,d,e)?
+Ancestor(x,'ned')?
+Sibling('ned','sue')?

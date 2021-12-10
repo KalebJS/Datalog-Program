@@ -3,6 +3,7 @@
 //
 
 #include "Interpreter.h"
+#include "Graph.h"
 
 Interpreter::Interpreter(DatalogProgram *datalogProgramPointer, Database *databasePointer) {
     datalogProgram = datalogProgramPointer;
@@ -13,6 +14,8 @@ void Interpreter::Interpret() {
     // Interpret the datalog program
     InterpretSchemes();
     InterpretFacts();
+    FindStronglyConnectedComponents();
+    exit(0);
     std::cout << "Rule Evaluation" << std::endl;
     InterpretRules();
     std::cout << "Query Evaluation" << std::endl;
@@ -160,4 +163,15 @@ void Interpreter::InterpretRules() {
     }
     std::cout << std::endl << "Schemes populated after " << this->ruleEvaluations << " passes through the Rules." <<
               std::endl << std::endl;
+}
+
+void Interpreter::FindStronglyConnectedComponents() {
+    Graph graph = Graph(this->datalogProgram);
+    graph.ConstructGraph();
+
+
+
+//    Graph reverseGraph = graph.Reverse();
+
+
 }

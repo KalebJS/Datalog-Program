@@ -13,6 +13,7 @@ private:
     DatalogProgram *datalogProgram;
     Database *database;
     unsigned ruleEvaluations = 1;
+
 public:
     Interpreter(DatalogProgram *datalogProgramPointer, Database *databasePointer);
 
@@ -21,6 +22,8 @@ public:
     void InterpretSchemes();
 
     void InterpretFacts();
+
+    void FindStronglyConnectedComponents();
 
     void InterpretRules();
 
