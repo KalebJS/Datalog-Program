@@ -7,13 +7,15 @@
 
 
 #include <set>
+#include <algorithm>
+#include <list>
 #include "Rule.h"
 
 class Node {
 private:
     Rule rule;
     unsigned id;
-    std::vector<Node *> edges;
+    std::list<Node *> edges;
     bool isVisited = false;
 public:
     Node(const Rule &rule, unsigned id);
@@ -26,7 +28,7 @@ public:
 
     unsigned int GetNodeID() const;
 
-    std::vector<Node *> GetEdges() const;
+    std::list<Node *> GetEdges() const;
 
     Rule GetRule() const;
 
@@ -35,6 +37,16 @@ public:
     bool GetVisited() const;
 
     bool HasPredicateID(Node *node);
+
+    bool IsSelfDependent();
+
+    bool operator<(const Node &rhs) const;
+
+    bool operator>(const Node &rhs) const;
+
+    bool operator<=(const Node &rhs) const;
+
+    bool operator>=(const Node &rhs) const;
 };
 
 

@@ -7,7 +7,11 @@
 
 Database::Database() = default;
 
-Database::~Database() = default;
+Database::~Database() {
+    for (auto relation : relations) {
+        delete relation;
+    }
+}
 
 void Database::AddRelation(const Predicate &scheme) {
     relations.emplace_back(new Relation(scheme));
@@ -39,7 +43,15 @@ std::string Database::ToString() {
     return ss.str();
 }
 
-Relation *Database::FindRelation(const std::string &relationName) {
+Relation Database::GetDereferencedRelation(const std::string &relationName) {
+    for (auto &relation: relations) {
+        if (relation->GetName() == relationName) {
+            return *relation;
+        }
+    }
+    throw ("Relation not found");
+}
+Relation* Database::GetRelation(const std::string &relationName) {
     for (auto &relation: relations) {
         if (relation->GetName() == relationName) {
             return relation;

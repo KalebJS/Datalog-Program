@@ -3,8 +3,6 @@
 //
 
 #include <sstream>
-#include <utility>
-#include <iostream>
 #include "Relation.h"
 
 Relation::Relation(Header header) {
@@ -40,28 +38,28 @@ bool Relation::AddTuple(const Tuple& tuple) {
     return false;
 }
 
-Relation *Relation::Select(int tupleIndex, const std::string &value) {
-    auto *selectedRelation = new Relation(name, header, tuples);
-    selectedRelation->FilterTuples(tupleIndex, value);
+Relation Relation::Select(int tupleIndex, const std::string &value) {
+    Relation selectedRelation = Relation(name, header, tuples);
+    selectedRelation.FilterTuples(tupleIndex, value);
     return selectedRelation;
 }
 
-Relation *Relation::Select(const std::vector<int> &tupleIndexes) {
-    auto *selectedRelation = new Relation(name, header, tuples);
-    selectedRelation->FilterTuples(tupleIndexes);
+Relation Relation::Select(const std::vector<int> &tupleIndexes) {
+    Relation selectedRelation = Relation(name, header, tuples);
+    selectedRelation.FilterTuples(tupleIndexes);
     return selectedRelation;
 }
 
-Relation *Relation::Project(const std::vector<std::string> &idList) {
-    auto *projectedRelation = new Relation(name, header, tuples);
-    projectedRelation->FilterColumns(idList);
+Relation Relation::Project(const std::vector<std::string> &idList) {
+    Relation projectedRelation = Relation(name, header, tuples);
+    projectedRelation.FilterColumns(idList);
     return projectedRelation;
 }
 
 
-Relation *Relation::Project(const std::vector<int> &indexList) {
-    auto *projectedRelation = new Relation(name, header, tuples);
-    projectedRelation->FilterColumns(indexList);
+Relation Relation::Project(const std::vector<int> &indexList) {
+    Relation projectedRelation = Relation(name, header, tuples);
+    projectedRelation.FilterColumns(indexList);
     return projectedRelation;
 }
 
@@ -73,15 +71,15 @@ std::vector<int> Relation::GetRelatedIndices(Predicate headPredicate) {
     return indexList;
 }
 
-Relation *Relation::Rename(const std::string &id, std::string value) {
-    auto *renamedRelation = new Relation(name, header, tuples);
-    renamedRelation->UpdateHeader(id, std::move(value));
+Relation Relation::Rename(const std::string &id, std::string value) {
+    Relation renamedRelation = Relation(name, header, tuples);
+    renamedRelation.UpdateHeader(id, std::move(value));
     return renamedRelation;
 }
 
-Relation *Relation::Rename(const int &index, const std::string &value) {
-    auto *renamedRelation = new Relation(name, header, tuples);
-    renamedRelation->UpdateHeader(index, value);
+Relation Relation::Rename(const int &index, const std::string &value) {
+    Relation renamedRelation = Relation(name, header, tuples);
+    renamedRelation.UpdateHeader(index, value);
     return renamedRelation;
 }
 
@@ -162,14 +160,14 @@ bool Relation::TupleIsJoinable(Tuple tuple1, Header header1, Tuple tuple2, Heade
     return true;
 }
 
-Relation *Relation::NaturalJoin(Relation *other) {
-    Header joinedHeader = header.NaturalJoin(other->GetHeader());
-    auto *joinedRelation = new Relation(joinedHeader);
+Relation Relation::NaturalJoin(Relation other) {
+    Header joinedHeader = header.NaturalJoin(other.GetHeader());
+    Relation joinedRelation = Relation(joinedHeader);
     for (auto tuple: tuples) {
-        for (const Tuple &otherTuple: other->GetTuples()) {
-            if (this->TupleIsJoinable(tuple, this->header, otherTuple, other->GetHeader(), joinedHeader)) {
-                Tuple joinedTuple = tuple.NaturalJoin(this->header, otherTuple, other->GetHeader(), joinedHeader);
-                joinedRelation->AddTuple(joinedTuple);
+        for (const Tuple &otherTuple: other.GetTuples()) {
+            if (this->TupleIsJoinable(tuple, this->header, otherTuple, other.GetHeader(), joinedHeader)) {
+                Tuple joinedTuple = tuple.NaturalJoin(this->header, otherTuple, other.GetHeader(), joinedHeader);
+                joinedRelation.AddTuple(joinedTuple);
             }
         }
     }
@@ -180,9 +178,9 @@ Header Relation::GetHeader() const {
     return header;
 }
 
-bool Relation::Union(Relation *pRelation) {
+bool Relation::Union(Relation pRelation) {
     bool hasNewTuples = false;
-    for (const auto &tuple: pRelation->GetTuples()) {
+    for (const auto &tuple: pRelation.GetTuples()) {
         if (this->AddTuple(tuple)) {
             hasNewTuples = true;
         }

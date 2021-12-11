@@ -7,13 +7,15 @@
 
 
 #include "DatalogProgram.h"
+#include "StronglyConnectedComponent.h"
+#include "Graph.h"
 
 class Interpreter {
 private:
     DatalogProgram *datalogProgram;
     Database *database;
     unsigned ruleEvaluations = 1;
-
+    std::vector<StronglyConnectedComponent> sccs;
 public:
     Interpreter(DatalogProgram *datalogProgramPointer, Database *databasePointer);
 
@@ -31,9 +33,11 @@ public:
 
     static std::vector<int> FindMatchingIds(std::vector<Parameter> parameters, const std::string &id);
 
-    static void PrintQueryResult(Predicate query, Relation *queryResult);
+    static void PrintQueryResult(Predicate query, Relation queryResult);
 
     static void PrintRuleResult(Rule rule, Relation *queryResult);
+
+    void InterpretStronglyConnectedComponents(StronglyConnectedComponent scc);
 };
 
 

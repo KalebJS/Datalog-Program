@@ -20,7 +20,33 @@ bool Node::HasPredicateID(Node *node) {
 }
 
 void Node::AddEdge(Node *node) {
-    edges.push_back(node);
+    if (edges.size() > 1) {
+        auto itr = edges.begin();
+        if ((*itr)->GetNodeID() > node->GetNodeID()) {
+            edges.push_front(node);
+            return;
+        }
+        for (; itr != edges.end(); itr++) {
+            auto itr_copy = itr;
+            itr_copy++;
+            if (itr_copy == edges.end()) {
+                edges.push_back(node);
+                return;
+            }
+            if ((*itr)->GetNodeID() < node->GetNodeID() && (*itr_copy)->GetNodeID() > node->GetNodeID()) {
+                edges.insert(itr, node);
+                return;
+            }
+        }
+    } else if (edges.size() == 1) {
+        if (node->GetNodeID() < edges.front()->GetNodeID()) {
+            edges.push_front(node);
+        } else {
+            edges.push_back(node);
+        }
+    } else {
+        edges.push_back(node);
+    }
 }
 
 unsigned Node::GetNodeID() const {
@@ -43,7 +69,7 @@ std::string Node::ToString() const {
     return ss.str();
 }
 
-std::vector<Node *> Node::GetEdges() const {
+std::list<Node *> Node::GetEdges() const {
     return edges;
 }
 
@@ -57,4 +83,13 @@ void Node::MarkAsVisited() {
 
 bool Node::GetVisited() const {
     return isVisited;
+}
+
+bool Node::IsSelfDependent() {
+    for (auto edge : edges) {
+        if (edge == this) {
+            return true;
+        }
+    }
+    return false;
 }

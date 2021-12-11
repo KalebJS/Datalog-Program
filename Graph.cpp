@@ -16,6 +16,7 @@ void Graph::ConstructGraph() {
     for (const auto &rule: rules) {
         Node *node = new Node(rule, idx);
         nodes.push_back(node);
+//        nodes.sort();
         idx++;
     }
     for (auto node_i: nodes) {
@@ -34,12 +35,15 @@ void Graph::BreadthFirstSearch(Node *node) {
             BreadthFirstSearch(edge);
         }
     }
-    postOrder.push(node);
+    postOrder.push(node->GetNodeID());
 }
 
-std::stack<Node *> Graph::BreadthFirstSearch() {
-    Node *firstNode = nodes[0];
-    BreadthFirstSearch(firstNode);
+std::stack<unsigned> Graph::BreadthFirstSearch() {
+    for (auto node : nodes) {
+        if (!node->GetVisited()) {
+            BreadthFirstSearch(node);
+        }
+    }
     return postOrder;
 }
 
@@ -90,8 +94,9 @@ bool Graph::HasUnvisitedNodes() {
 }
 
 Graph::~Graph() {
-    for (auto node: nodes) {
-        delete node;
+    while (!nodes.empty()) {
+        delete nodes.back();
+        nodes.pop_back();
     }
 }
 
@@ -104,8 +109,56 @@ void Graph::PrintGraph() {
 void Graph::PrintPostOrder() {
     std::cout << std::endl << "Breadth first search:" << std::endl;
     while (!postOrder.empty()) {
-        Node* node = postOrder.top();
+        unsigned node = postOrder.top();
         postOrder.pop();
-        std::cout << node->GetNodeID() << " ";
+        std::cout << node << " ";
+    }
+}
+
+void Graph::BreadthFirstSearchTree(StronglyConnectedComponent &scc, Node *node) {
+    node->MarkAsVisited();
+    scc.AddComponent(node);
+    RemoveNodeFromOrder(node);
+    for (auto edge: node->GetEdges()) {
+        if (!edge->GetVisited()) {
+            BreadthFirstSearchTree(scc, edge);
+        }
+    }
+}
+
+bool Graph::HasNode(Node* node) {
+    for (auto orderedNode : nodesInOrder) {
+        if (orderedNode == node) {
+            return true;
+        }
+    }
+    return false;
+}
+void Graph::RemoveNodeFromOrder(Node* node) {
+    std::remove(nodesInOrder.begin(), nodesInOrder.end(), node);
+}
+
+std::vector<StronglyConnectedComponent> Graph::BreadthFirstSearchForest(std::stack<unsigned> postOrderStack) {
+    while (!postOrderStack.empty()) {
+        unsigned nodeID = postOrderStack.top();
+        postOrderStack.pop();
+        nodesInOrder.push_back(GetNodeByID(nodeID));
+    }
+
+    std::vector<StronglyConnectedComponent> sccs;
+
+    while (HasUnvisitedNodes()) {
+        Node* startingNode = nodesInOrder.front();
+        StronglyConnectedComponent scc = StronglyConnectedComponent();
+        BreadthFirstSearchTree(scc, startingNode);
+        sccs.push_back(scc);
+    }
+
+    return sccs;
+}
+
+void Graph::PrintSCCs(const std::vector<StronglyConnectedComponent>& sccs) {
+    for (StronglyConnectedComponent scc: sccs) {
+        std::cout << scc.ToString() << std::endl;
     }
 }
