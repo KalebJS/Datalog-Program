@@ -10,12 +10,13 @@
 #include "DatalogProgram.h"
 #include "Node.h"
 #include "StronglyConnectedComponent.h"
+#include <algorithm>
 
 class Graph {
 private:
     DatalogProgram *datalogProgram;
     std::vector<Rule> rules;
-    std::vector<Node *> nodes;
+    std::list<Node *> nodes;
     std::stack<unsigned> postOrder;
     std::deque<Node *> nodesInOrder;
 

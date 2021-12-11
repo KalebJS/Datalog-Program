@@ -16,6 +16,7 @@ void Graph::ConstructGraph() {
     for (const auto &rule: rules) {
         Node *node = new Node(rule, idx);
         nodes.push_back(node);
+//        nodes.sort();
         idx++;
     }
     for (auto node_i: nodes) {

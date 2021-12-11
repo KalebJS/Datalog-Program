@@ -8,7 +8,7 @@
 #include <algorithm>
 
 
-std::vector<Rule> StronglyConnectedComponent::GetRules() {
+std::list<Rule> StronglyConnectedComponent::GetRules() {
     return rules;
 }
 
@@ -17,7 +17,7 @@ void StronglyConnectedComponent::AddComponent(Node *node) {
     nodeIDs.push_back(node->GetNodeID());
     ruleMap.insert(std::pair<unsigned, Rule>(node->GetNodeID(), node->GetRule()));
 
-    std::sort(nodeIDs.begin(), nodeIDs.end());
+    nodeIDs.sort();
 
     if (isTrivial && (nodeIDs.size() > 1 || node->IsSelfDependent())) {
         isTrivial = false;

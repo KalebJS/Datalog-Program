@@ -8,19 +8,21 @@
 
 #include <vector>
 #include <map>
+#include <algorithm>
+#include <list>
 #include "Rule.h"
 #include "Node.h"
 
 class StronglyConnectedComponent {
 private:
-    std::vector<Rule> rules;
-    std::vector<unsigned> nodeIDs;
+    std::list<Rule> rules;
+    std::list<unsigned> nodeIDs;
     std::map<unsigned, Rule> ruleMap;
     bool isTrivial = true;
 public:
     StronglyConnectedComponent() = default;
 
-    std::vector<Rule> GetRules();
+    std::list<Rule> GetRules();
 
     void AddComponent(Node *node);
 
